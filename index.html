@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="sp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/styleindex.css">
+    <title>Realty</title>
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <div>
+                <h1>Realty</h1>
+            </div>
+            <div>
+                <button class="btn-login" type="button">INICIAR SESIÓN</button>
+                <button class="btn-menu" type="button">MENÚ</button>
+            </div>
+        </div>
+    </nav>
+    <section>
+        <div class="contenedor-menu">
+            <ul>
+                <li><a href="#">BUSCAR UNA PROPIEDAD</a></li>
+                <li><a href="#">VENDE|RENTA TU PROPIEDAD CON REALTY</a></li>
+                <li><a href="#">PROPIEDADES DE LUJO</a></li>
+                <li><a href="#">PROPIEDADES COMERCIALES - INDUSTRIALES</a></li>
+                <li><a href="#">NOSOTROS</a></li>
+                <li><a href="#">ADQUIERE TU FRANQUICIA</a></li>
+                <li><a href="#">UNETE A REALTY</a></li>
+                <li><a href="#">CONTÁCTO</a></li>
+                <li><a href="#">BLOG</a></li>
+            </ul>
+        </div>
+    </section>
+    <section>
+        <form action="">
+            <div class="contenedor-busqueda">
+                <div class="op-busqueda">
+                    <button type="button">Propiedades</button>
+                    <button type="button">Comercial</button>
+                    <button type="button">Collecciones</button>
+                </div>
+                <div class="form-busqueda">
+                    <div class="checkbox-container">
+                        <div>
+                            <input type="checkbox" name="venta">
+                            <label for="">VENTA</label>
+                            <input type="checkbox" name="renta">
+                            <label for="">RENTA</label>
+                            <input type="checkbox" name="traspaso">
+                            <label for="">TRASPASO</label>
+                        </div>
+                        <div>
+                            <button class="btn-filtro" type="button">FILTRO</button>
+                        </div>
+                    </div>
+                    <div>
+                        <select class="select-tipo" name="Tipo inmueble" id="" placeholder="Tipo de inmueble">
+                            <option value="">Casa</option>
+                            <option value="">Departamento</option>
+                            <option value="">Loft</option>
+                        </select>
+                        <input class="btn-ubicacion" type="text" placeholder="Ubicacion">
+                    </div>
+                    <div class="inputs-container">
+                        <div class="col" name="columna izquierda">
+                            <input type="cantidad" placeholder="Precio">
+                            <input type="cantidad" placeholder="Cuartos">
+                            <input type="cantidad" placeholder="Area m^2">
+                        </div>
+                        <div class="col" name="columna derecha">
+                            <input type="cantidad" placeholder="Tamaño">
+                            <input type="cantidad" placeholder="Baños">
+                            <input type="cantidad" placeholder="Estacionamiento">
+                        </div>
+                    </div>
+                    <div>
+                        <button class="btn-buscar" type="button">BUSCAR</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </section>
+</body>
+</html>
