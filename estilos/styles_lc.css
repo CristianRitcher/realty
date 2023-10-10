@@ -70,7 +70,7 @@ button {
 .editar button,
 .eliminar button {
     background-color: #fff;
-    border-color: #fff;
+    border: 2px solid #fff;
     font-family: 'FONTSPRING DEMO - TT Commons Pro Demibold';
     font-size: 15px;
     font-weight: 600;
@@ -81,10 +81,17 @@ button {
 input#busqueda {
     height: 30px;
     width: 260%;
+    border: 2px solid #fff;
     border-radius: 20px;
     margin-left: -85%;
 }
 
 .clientes {
-    margin: 30px;
+    margin: 25px;
+    text-align: center;
+}
+
+.btn-secondary{
+    background-color: #EC1831;
+    border: 2px solid #EC1831;
 }
