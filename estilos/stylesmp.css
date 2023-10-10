@@ -1,0 +1,234 @@
+header {
+    background-color: #EC1831;
+    color: #fff;
+    display: flex;
+    flex: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.logo-text-container {
+    display: flex;
+    align-items: center;
+}
+
+.Realty-logo {
+    position: relative;
+    margin-top: 10%;
+    margin-left: -400%;
+}
+
+.text-container {
+    margin-left: -126%;
+}
+
+.Realty {
+    font-size: 25px;
+    font-family: Lastica;
+    font-weight: 600;
+    letter-spacing: 4.12px;
+    word-wrap: break-word;
+    margin-top: 15%;
+}
+
+.Bienes-raíces {
+    color: white;
+    font-size: 20px;
+    font-family: Lato;
+    font-weight: 400;
+    letter-spacing: 1.10px;
+    height: 50px;
+    word-wrap: break-word;
+    margin-top: 3%;
+}
+
+.Btn-borrar {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    justify-content: space-between;
+    margin-left: -20%;
+}
+
+.Btn-filtro {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    justify-content: space-between;
+    margin-left: 2%;
+}
+
+.Btn-buscar {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    justify-content: space-between;
+    margin-left: 2%;
+}
+
+input#Ubicación {
+    height: 35px;
+    width: 430%;
+    border-radius: 30px;
+    border-color: #F41922;
+    outline: none;
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    flex-grow: 1;
+    min-width: 100px;
+    margin-left: 20%;
+}
+
+.Btn-menú {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    justify-content: space-between;
+    margin-left: 60%;
+}
+
+.Borrar button {
+    height: 45px;
+    width: 85px;
+    border-radius: 30px;
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 0;
+    color: #EC1831;
+    background-color: #fff;
+    border-color: #F41922;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.Filtro button {
+    height: 45px;
+    width: 85px;
+    border-radius: 30px;
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 0;
+    color: #EC1831;
+    background-color: #fff;
+    border-color: #F41922;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.Buscar button {
+    height: 50px;
+    width: 100px;
+    border-radius: 30px;
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 0;
+    color: white;
+    background-color: #EC1831;
+    border-color: #fff;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.Menú button {
+    height: 45px;
+    width: 100px;
+    border-radius: 30px;
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 0;
+    color: #EC1831;
+    background-color: #fff;
+    border-color: #F41922;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.content {
+    display: flex;
+}
+
+.Realty-mapa {
+    flex: 60%;
+    height: 100%;
+}
+
+.Filtros {
+    flex: 40%;
+    background-color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.select-tipo {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 10%;
+    margin-left: 7%;
+    width: 86%;
+    height: 47px;
+    border-radius: 30px;
+    border-color: #F41922;
+    color: #787878;
+    border-width: 3px;
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+}
+
+.Filtros input {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-left: 4%;
+    width: 50%;
+    height: 40px;
+    border-radius: 30px;
+    border-color: #F41922;
+    outline: none;
+    border-width: 3px;
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+}
+
+.inputs-container .col {
+    width: 170%;
+}
+
+.btn-buscar {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-left: 34%;
+    width: 30%;
+    height: 45px;
+    border-radius: 30px;
+    border-color: #F41922;
+    color: #fff;
+    background-color: #EC1831;
+    border-width: 3px;
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+}
