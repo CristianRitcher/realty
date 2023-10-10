@@ -1,0 +1,57 @@
+html,body {
+    padding: 0;
+}
+
+#slider {
+    overflow: hidden;
+    margin-bottom: 50px;
+    margin: 0 auto;
+    max-width: 100%;
+    height: 600px;
+}
+
+#text-portada{
+    text-align: center;
+    bottom: 150px;
+    overflow: hidden;
+}
+
+#text-portada-1 {
+    text-align: center;
+    bottom: 250px;
+    overflow: hidden;
+}
+
+#text-portada-2 {
+    text-align: center;
+    bottom: 350px;
+    overflow: hidden;
+}
+
+#boton-p1 {
+    background-color: #ee3048;
+    border: 2px solid #ee3048;
+}
+
+#viewp {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background-color: #ee3048;
+    border: 2px solid #ee3048;
+}
+
+.card-deck {
+    display: flex;
+    padding: 0;
+}
+
+.card {
+    margin: 20px;
+}
+
+.card-img-top {
+    margin: 0 auto;
+    overflow: hidden;
+    max-width: 100%;
+}
