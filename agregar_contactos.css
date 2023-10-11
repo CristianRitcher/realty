@@ -1,0 +1,127 @@
+*{
+    color:#ec1831;
+    font-family:'Opens Sans',helvetica;  
+    font-weight: bold;
+}
+body{
+    background-color: #ffffff;
+    overflow-x:auto;
+    overflow-y:auto;
+    
+}
+/*-------------------------------------------------------CONTENEDOR DEL CUERPO*/
+.container-body{
+    background-color:  #ffffff ;
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+    padding-inline: 0%;
+    width: 50%;
+    height: 50%;
+    float: right;
+}
+
+/*------------------------------------------------------FORMULARIO*/
+.form-search .group-btns{
+    margin-bottom: 30px;
+    padding:0%;
+    display: flex;
+    justify-content: space-between;
+}
+.form-search .btn-op{
+    margin: 0px;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #ffffff;
+    color: #ec1831;
+    border-radius: 20px;
+    font-weight: bold;
+
+}
+.form-search .card{
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    background-color: #ec1831;
+    float: left;
+}
+.form-search .btn-datos{
+    background-color: #ec1831;
+    color: #ffffff;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    float: right;
+}
+.form-search .btn-credito{
+    background-color: #ec1831;
+    color: #ffffff;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    float: right;
+}
+.form-search .btn-observaciones{
+    background-color: #ec1831;
+    color: #ffffff;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    float: right;
+}
+.form-search span{
+    padding: 5px;
+    border-radius: 20px;
+    border: 2px solid #ec1818;
+    border-right: 0px;
+    font-weight: bold;
+    font-size: 16px;
+    color:#ec1831;
+    width:fit-content;
+    justify-content: center;
+}
+.form-search select{
+    padding: 5px;
+    border: 2px solid #ec1818;
+    border-left: 0px;
+    border-radius: 20px;
+    border-color: #ec1831;
+    color:#ec1831;
+}
+.form-search input{
+    padding: 5px;
+    border: 2px solid #ec1831;
+    border-left: 0px;
+    border-radius: 20px;
+    color:#ec1831;
+}
+.form-search .form-check-input{
+    font-size: 18px;
+    border: 2px solid #ec1831;
+    border-radius: 20px;
+    background-color: #ffffff;
+    text-align: center;
+    line-height: 20px;
+}
+.form-search .form-check-input:checked{
+    content: '\2713';
+    font-size: 18px;
+    color: #ffffff;
+    border: 2px solid #ec1831;
+    border-radius: 20px;
+    background-color: #ec1831;
+    text-align: center;
+    line-height: 20px;
+}
+.logo {
+    width: 250px;
+    margin: 20px;
+}
+.persona {
+    width: 250px;
+    margin: 100px;
+}
+.contenedor {
+    display: flex;
+    flex-direction: column;
+}
