@@ -1,6 +1,4 @@
 <?php include("conn.php");?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,46 +7,48 @@
     <title>Circulo de influencias</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/09c18a7d19.js" crossorigin="anonymous"></script>
-    <style>
-        .hidden {
-            display: none;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="../estilos/crud.css">
 </head>
 <body>
     <div class="">
-        <div class="row">
-            <div class="col-12">
-                <h1>Circulo de influencias</h1>
-                <!-- Button trigger modal -->
-                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#FormularioContacto">Agregar</button>
+        <header>
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1>CIRCULO DE INFLUENCIAS</h1>
+                </div>
+            <div class="row">
+                <div class="col-12">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-danger header-button" data-bs-toggle="modal" data-bs-target="#FormularioContacto">Agregar</button>
 
-                <!-- Modal -->
-                <div class="modal fade" id="FormularioContacto" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h1 class="modal-title fs-5" id="staticBackdropLabel">Registrar contacto</h1>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <form action="registro.php" method="POST">
-                                    <input name="nombre" class="form-control mb-3" type="text" placeholder="NOMBRE">
-                                    <input name="apellido_1" class="form-control mb-3" type="text" placeholder="PATERNO">
-                                    <input name="apellido_2" class="form-control mb-3" type="text" placeholder="MATERNO">
-                                    <input name="telefono" class="form-control mb-3" type="text" placeholder="TELEFONO">
-                                    <input name="correo" class="form-control mb-3" type="email" placeholder="CORREO">
-                                    <input name="registrar" class="btn" type="submit" value="Registrar">
-                                </form>
+                    <!-- Modal -->
+                    <div class="modal fade" id="FormularioContacto" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <div class="d-flex justify-content-center w-100">
+                                        <h1 class="modal-title fs-5" id="staticBackdropLabel">Registrar contacto</h1>
+                                    </div>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form action="registro.php" method="POST">
+                                        <input name="nombre" class="form-control mb-3" type="text" placeholder="NOMBRE">
+                                        <input name="apellido_1" class="form-control mb-3" type="text" placeholder="PATERNO">
+                                        <input name="apellido_2" class="form-control mb-3" type="text" placeholder="MATERNO">
+                                        <input name="telefono" class="form-control mb-3" type="text" placeholder="TELEFONO">
+                                        <input name="correo" class="form-control mb-3" type="email" placeholder="CORREO">
+                                        <input name="registrar" class="btn btn-danger" type="submit" value="Registrar">
+                                    </form>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <input type="text" placeholder="Buscar">
-                <button class="btn">Buscar</button>
-                <button class="btn">Filtros</button>
+                    <input type="text" id="buscar" placeholder="Buscar:">
+                    <button class="btn btn-danger header-button">Buscar</button>
+                    <button class="btn btn-danger header-button">Filtros</button>
             </div>
-        </div>
+        </header>
         <div class="row">
             <div class="col">
                 <!-- MENSAJE DE ALERTA DE OPERACION-->
@@ -73,7 +73,7 @@
                             <th scope="col">Contestado</th>
                             <th scope="col">Interesado</th>
                             <th scope="col">Teléfono</th>
-                            <th scope="col">e-mail</th>
+                            <th scope="col">Correo</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -101,7 +101,7 @@
                                             </div>
                                         </td>
                                         <td>
-                                            <label><?php $id; ?></label>
+                                            <label><?php echo $id; ?></label>
                                         </td>
                                         <td>
                                             <label class="label_nombres"><?php echo $row['nombre']." ".$row['apellido_1']." ".$row['apellido_2']; ?></label>
@@ -137,6 +137,6 @@
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <script src="opciones.js"></script>
+    <script src="../js/opciones.js"></script>
 </body>
 </html>
