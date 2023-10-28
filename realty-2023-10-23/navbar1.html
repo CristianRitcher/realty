@@ -19,7 +19,15 @@
 					<li><a href="#">NUESTRO BLOG</a></li>
 				</ul>
 			</li>
-			<li><a href="login.php">/LOGIN</a></li>
+			<?php
+				session_start();
+				if(!isset($_SESSION['txtusuario'])) {
+					echo "<li><a href=\"login.php\">/LOGIN</a></li>";
+				} else {
+					echo "<li><a href=\"menu-control.php\">/MENÚ DE CONTROL</a></li>";
+					echo "<li><a href=\"php/logout.php\">/LOGOUT</a></li>";
+				}
+			?>
 		</ul>
 
 	</nav>
