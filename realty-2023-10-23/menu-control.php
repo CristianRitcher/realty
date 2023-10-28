@@ -22,13 +22,34 @@
             <div class="perfil">
                 <a href=""><img src="img/persona.png" alt=""></a>
                 <div>
-                    <p>Nombre del Agente/ADMIN</p>
+                    <!-- Nombre de perfil -->
+                    <?php
+                        include 'php/conn-vistas.php';
+    
+                        $sql = "SELECT * FROM usuarios WHERE correo = '$nombre' and contrasena = '$pass'";
+                        $result = mysqli_query($conn, $sql);
+                        $row = mysqli_fetch_assoc($result);
+    
+                        echo "<p> " . $row["nombre"]. " " . $row["apellido_1"]. " " . $row["apellido_2"]. "</p> ";
+                    ?>
                     <a href="">VER PERFIL</a>
                 </div>
             </div>
-            <div class="contactos">
-                <a href="crud-clientes.php"><button>CONTACTOS</button></a>
-            </div>
+            
+            <!-- pone botón clientes o agentes dependiendo del rol del usuario -->
+            <?php
+                include 'php/conn-vistas.php';
+
+                $sql = "SELECT * FROM usuarios WHERE correo = '$nombre' and contrasena = '$pass'";
+                $result = mysqli_query($conn, $sql);
+                $row = mysqli_fetch_assoc($result);
+
+                if ($row["rol"] == '0') {
+                    echo "<div class=\"contactos\"><a href=\"crud-clientes.php\"><button>CONTACTOS</button></a></div>";
+                } elseif ($row["rol"] == '1') {
+                    echo "<div class=\"contactos\"><a href=\"crud-agentes.php\"><button>AGENTES</button></a></div>";
+                }
+            ?>
             <div class="propiedades">
                 <a href="propiedades.php"><button>PROPIEDADES</button></a>
             </div>
