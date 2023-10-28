@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: localhost
--- Tiempo de generación: 24-10-2023 a las 03:19:07
+-- Tiempo de generación: 28-10-2023 a las 06:51:07
 -- Versión del servidor: 10.4.28-MariaDB
 -- Versión de PHP: 8.2.4
 
@@ -24,52 +24,6 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `administradores`
---
-
-CREATE TABLE `administradores` (
-  `id_administrador` int(10) UNSIGNED ZEROFILL NOT NULL,
-  `correo` varchar(50) NOT NULL,
-  `contrasena` varchar(50) NOT NULL DEFAULT 'realty',
-  `nombre` varchar(50) NOT NULL,
-  `apellido_1` varchar(50) NOT NULL,
-  `apellido_2` varchar(50) DEFAULT NULL,
-  `telefono` char(10) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Volcado de datos para la tabla `administradores`
---
-
-INSERT INTO `administradores` (`id_administrador`, `correo`, `contrasena`, `nombre`, `apellido_1`, `apellido_2`, `telefono`) VALUES
-(0000000001, 'cristian.ritcher@outlook.com', 'realty', 'Cristian', 'Ritcher', 'Chávez', '6182672162');
-
--- --------------------------------------------------------
-
---
--- Estructura de tabla para la tabla `agentes`
---
-
-CREATE TABLE `agentes` (
-  `id_agente` int(10) UNSIGNED ZEROFILL NOT NULL,
-  `correo` varchar(50) NOT NULL,
-  `contraseña` varchar(50) NOT NULL DEFAULT 'realty',
-  `nombre` varchar(50) NOT NULL,
-  `apellido_1` varchar(50) NOT NULL,
-  `apellido_2` varchar(50) DEFAULT NULL,
-  `telefono` char(10) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Volcado de datos para la tabla `agentes`
---
-
-INSERT INTO `agentes` (`id_agente`, `correo`, `contraseña`, `nombre`, `apellido_1`, `apellido_2`, `telefono`) VALUES
-(0000000001, 'cris', 'realty', 'cris', 'rit', 'cha', '1234567890');
-
--- --------------------------------------------------------
-
---
 -- Estructura de tabla para la tabla `clientes`
 --
 
@@ -80,15 +34,8 @@ CREATE TABLE `clientes` (
   `apellido_2` varchar(50) DEFAULT NULL,
   `correo` varchar(50) DEFAULT NULL,
   `telefono` char(10) NOT NULL,
-  `id_agente` int(10) UNSIGNED ZEROFILL NOT NULL
+  `id_usuario` int(10) UNSIGNED ZEROFILL NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Volcado de datos para la tabla `clientes`
---
-
-INSERT INTO `clientes` (`id_cliente`, `nombre`, `apellido_1`, `apellido_2`, `correo`, `telefono`, `id_agente`) VALUES
-(0000000004, 's', 's', 's', 'c.s@outlook.com', '1234567789', 0000000001);
 
 -- --------------------------------------------------------
 
@@ -117,66 +64,85 @@ CREATE TABLE `propiedades` (
   `jardin_area` int(10) UNSIGNED DEFAULT NULL,
   `piscina` set('si','no') DEFAULT NULL,
   `descripcion` varchar(500) DEFAULT NULL,
-  `id_agente` int(10) UNSIGNED ZEROFILL NOT NULL
+  `id_usuario` int(10) UNSIGNED ZEROFILL NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `usuarios`
+--
+
+CREATE TABLE `usuarios` (
+  `id_usuario` int(10) UNSIGNED ZEROFILL NOT NULL,
+  `correo` varchar(50) NOT NULL,
+  `contrasena` varchar(50) NOT NULL DEFAULT 'realty',
+  `nombre` varchar(50) NOT NULL,
+  `apellido_1` varchar(50) NOT NULL,
+  `apellido_2` varchar(50) DEFAULT NULL,
+  `telefono` char(10) NOT NULL,
+  `rol` int(1) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Volcado de datos para la tabla `usuarios`
+--
+
+INSERT INTO `usuarios` (`id_usuario`, `correo`, `contrasena`, `nombre`, `apellido_1`, `apellido_2`, `telefono`, `rol`) VALUES
+(0000000004, 'cristian@hotmail.com', 'realty', 'Cristian', 'Ritcher', 'Chávez', '618000015', 1),
+(0000000005, 'estefania@hotmail.com', 'realty', 'Estefania', 'Silva', 'Erfkamp', '618000014', 0),
+(0000000006, 'sergio@hotmail.com', 'realty', 'Sergio', 'Soto', 'Cervantes', '618000012', 0),
+(0000000007, 'raul@hotmail.com', 'realty', 'Raúl', 'Meraz', 'Reyes', '618000009', 0),
+(0000000008, 'diego@hotmail.com', 'realty', 'Diego Arturo', 'Arteaga', 'Ávila', '618000008', 1),
+(0000000009, 'jose@hotmail.com', 'realty', 'José', 'Rodriguez', 'Luna', '618000006', 1),
+(0000000010, 'homero@hotmail.com', 'realty', 'Homero', 'Puga', NULL, '618000004', 0),
+(0000000011, 'marco@hotmail.com', 'realty', 'Marco', 'Rosas', 'Aguirre', '618000002', 1);
 
 --
 -- Índices para tablas volcadas
 --
 
 --
--- Indices de la tabla `administradores`
---
-ALTER TABLE `administradores`
-  ADD PRIMARY KEY (`id_administrador`);
-
---
--- Indices de la tabla `agentes`
---
-ALTER TABLE `agentes`
-  ADD PRIMARY KEY (`id_agente`);
-
---
 -- Indices de la tabla `clientes`
 --
 ALTER TABLE `clientes`
   ADD PRIMARY KEY (`id_cliente`),
-  ADD KEY `id_agente` (`id_agente`);
+  ADD KEY `id_usuario` (`id_usuario`);
 
 --
 -- Indices de la tabla `propiedades`
 --
 ALTER TABLE `propiedades`
   ADD PRIMARY KEY (`id_propiedad`),
-  ADD KEY `id_agente` (`id_agente`);
+  ADD KEY `id_usuario` (`id_usuario`);
+
+--
+-- Indices de la tabla `usuarios`
+--
+ALTER TABLE `usuarios`
+  ADD PRIMARY KEY (`id_usuario`);
 
 --
 -- AUTO_INCREMENT de las tablas volcadas
 --
 
 --
--- AUTO_INCREMENT de la tabla `administradores`
---
-ALTER TABLE `administradores`
-  MODIFY `id_administrador` int(10) UNSIGNED ZEROFILL NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
-
---
--- AUTO_INCREMENT de la tabla `agentes`
---
-ALTER TABLE `agentes`
-  MODIFY `id_agente` int(10) UNSIGNED ZEROFILL NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
-
---
 -- AUTO_INCREMENT de la tabla `clientes`
 --
 ALTER TABLE `clientes`
-  MODIFY `id_cliente` int(10) UNSIGNED ZEROFILL NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id_cliente` int(10) UNSIGNED ZEROFILL NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT de la tabla `propiedades`
 --
 ALTER TABLE `propiedades`
   MODIFY `id_propiedad` int(10) UNSIGNED ZEROFILL NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT de la tabla `usuarios`
+--
+ALTER TABLE `usuarios`
+  MODIFY `id_usuario` int(10) UNSIGNED ZEROFILL NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- Restricciones para tablas volcadas
@@ -186,13 +152,13 @@ ALTER TABLE `propiedades`
 -- Filtros para la tabla `clientes`
 --
 ALTER TABLE `clientes`
-  ADD CONSTRAINT `clientes_ibfk_1` FOREIGN KEY (`id_agente`) REFERENCES `agentes` (`id_agente`) ON UPDATE CASCADE;
+  ADD CONSTRAINT `clientes_ibfk_1` FOREIGN KEY (`id_usuario`) REFERENCES `usuarios` (`id_usuario`) ON UPDATE CASCADE;
 
 --
 -- Filtros para la tabla `propiedades`
 --
 ALTER TABLE `propiedades`
-  ADD CONSTRAINT `propiedades_ibfk_1` FOREIGN KEY (`id_agente`) REFERENCES `agentes` (`id_agente`) ON UPDATE CASCADE;
+  ADD CONSTRAINT `propiedades_ibfk_1` FOREIGN KEY (`id_usuario`) REFERENCES `usuarios` (`id_usuario`) ON UPDATE CASCADE;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
