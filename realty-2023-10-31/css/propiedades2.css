@@ -1,0 +1,130 @@
+html, body {
+    padding: 0;
+    margin: 0;
+}
+.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+  
+    > .col,
+    > [class*="col-"] {
+      padding-right: 0;
+      padding-left: 0;
+    }
+}
+
+header, footer {
+    z-index: 300;
+}
+h4 {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    
+}
+
+.form-control-range {
+    width: 90%;
+}
+
+.col-md-3 {
+
+    box-shadow: -2px 0 14px -8px black;
+    z-index: 100;
+}
+
+
+
+.filtros {
+    position: sticky;
+    padding: 20px;
+    padding-bottom: 190px;
+    top: 0px;
+}
+
+#slider {
+    overflow: hidden;
+    margin-bottom: 20px;
+    max-width: 100%;
+    height: 600px;
+    overflow: hidden;
+}
+
+#slider div img {
+    min-height: 600px;
+    width: 100vw;
+}
+
+#text-portada, #text-portada-1, #text-portada-2{
+    text-align: left;
+    top: 300px;
+    overflow: hidden;
+}
+
+#boton-p1 {
+    background-color: #ee3048;
+    border: 2px solid #ee3048;
+}
+
+#viewp {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background-color: #ee3048;
+    border: 2px solid #ee3048;
+}
+
+#viewp:hover {
+    background-color: white;
+    border-color: #ee3048;
+    color: #ee3048;
+}
+
+.card-deck {
+    display: flex;
+    padding: 0;
+    margin: 20px;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.card {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 20px ;
+}
+
+#pagination_color {
+    color: #ee3048;
+}
+
+.contenido {
+    margin-top: 0;
+    padding-top: 0;
+    flex: 1;
+}
+
+.paginacion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    margin: 40px 0 40px 20px;
+}
+ 
+@media (max-width: 668px) {
+    .card-deck {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .filtros {
+        padding-bottom: 20px;
+    }
+   
+}

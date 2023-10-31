@@ -1,0 +1,129 @@
+body {
+    font-family: FONTSPRING DEMO - TT Commons Pro Demibold;
+    font-weight: 100;
+}
+
+.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+  
+    > .col,
+    > [class*="col-"] {
+      padding-right: 0;
+      padding-left: 0;
+    }
+}
+
+.card-deck {
+    display: flex;
+    padding: 0;
+    margin: 20px;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.card {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 20px ;
+}
+
+#pagination_color {
+    color: #ee3048;
+}
+
+.contenido {
+    margin-top: 0;
+    padding-top: 0;
+    flex: 1;
+}
+
+#viewp {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background-color: #ee3048;
+    border: 2px solid #ee3048;
+}
+
+.busqueda {
+    background-color: #ee3048;
+    border-radius: 10px 0 0 10px;
+    padding: 20px;
+    margin: 20px -12px 20px 20px;
+}
+.mapa {
+    border-radius: 0 10px 10px 0;
+    padding: 0;
+    margin: 20px 20px 20px -12px;
+    height: 100%;
+}
+iframe {
+    height: 91%;
+    border-radius: 10px;
+}
+
+.row {
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .mapa, .busqueda {
+        margin: 0;
+        border-radius: 0;
+        
+    }
+    .row {
+        margin-top: 0;
+    }
+
+    .iframe {
+        border-radius: 0;
+    }
+    .mapa {
+        margin-top: 0;
+    }
+   
+}
+
+@media (max-width: 668px) {
+    .card-deck {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+#boton-buscar {
+    background-color: white;
+    color: black;
+}
+
+#boton-buscar:hover {
+    background-color: #ee3048;
+    border-color: white;
+    color: white;
+}
+
+
+#logo-bienvenida {
+    width: 500px;
+    height: auto;
+    margin: 60px auto 100px auto;
+}
+
+#bienvenida {
+    padding: 20px 0 20px 0;
+    font-size: 24px;
+    font-weight: 100;
+    color: rgb(68, 68, 68);
+    margin: 20px 20px 60px 20px;
+    text-align: center;
+}
+
+#tipo {
+    color: white;
+}
+
+h2 {
+    font-weight: 100;
+}

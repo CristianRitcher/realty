@@ -1,0 +1,97 @@
+header {
+    background-color: #F41922;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+}
+body{
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo-text-container {
+    display: flex;
+    align-items: center; 
+}
+
+.Realty-logo {
+    width: 80px;
+    height: 75px;
+}
+
+.text-container {
+    margin-left: 20px;
+}
+
+.Realty {
+    color: white;
+    font-size: 25px;
+    font-family: Lastica;
+    font-weight: 600;
+    letter-spacing: 4.12px;
+    word-wrap: break-word;
+}
+
+.Bienes-raíces {
+    color: white;
+    font-size: 20.10px;
+    font-family: Lato;
+    font-weight: 400;
+    letter-spacing: 1.10px;
+    height: 50px;
+    word-wrap: break-word;
+}
+
+.acciones {
+    display: flex;
+    align-items: center;
+}
+
+button {
+    height: 30px;
+    width: 110px;
+    border-radius: 30px;
+    margin-left: 10px;
+    color: #EC1831;
+}
+
+.crear button,
+.editar button,
+.eliminar button {
+    background-color: #fff;
+    border: 2px solid #fff;
+    font-family: 'FONTSPRING DEMO - TT Commons Pro Demibold';
+    font-size: 15px;
+    font-weight: 600;
+    padding: 0;
+    color: #EC1831;
+}
+
+input#busqueda {
+    height: 30px;
+    width: 260%;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    margin-left: -85%;
+}
+
+.clientes {
+    margin: 25px;
+    text-align: center;
+}
+
+.btn-secondary{
+    background-color: #EC1831;
+    border: 2px solid #EC1831;
+}
