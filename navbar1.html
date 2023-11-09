@@ -1,35 +1,34 @@
 <header>
 	<nav class="navbar">
 
-		<div class="logo">
-			<a href="index.php"><img src="img/realty_logo_b.svg" alt="Logo de la empresa"></a>
+		<div class="navbar-logo">
+			<a href="index.php"><img src="img/realty_logo_b.svg" alt="" width="150px"></a>
 		</div>
 
-		<ul class="nav-links">
-			<li><a href="index.php">/INICIO</a></li>
-			<li><a href="#footer-img">/CONTACTO</a></li>
-			<li class="dropdown">
-				<a href="#dropdown">/MENÚ</a>
-				<ul class="dropdown-content" id="dropdown">
-					<li><a href="#">¿QUIÉNES SOMOS?</a></li>
-					<li><a href="#">NUESTROS SERVICIOS</a></li>
-					<li><a href="#">VENDE TU PROPIEDAD</a></li>
-					<li><a href="#">VUÉLVETE AGENTE</a></li>
-					<li><a href="#">AVISO DE PRIVACIDAD</a></li>
-					<li><a href="#">NUESTRO BLOG</a></li>
-				</ul>
-			</li>
-			
-			<?php
-				session_start();
-				if(!isset($_SESSION['txtusuario'])) {
-					echo "<li><a href=\"login.php\">/LOGIN</a></li>";
-				} else {
-					echo "<li><a href=\"menu-control.php\">/MENÚ DE CONTROL</a></li>";
-					echo "<li><a href=\"php/logout.php\">/LOGOUT</a></li>";
-				}
-			?>
-		</ul>
+		<button id="openBtn"><img src="img/menu.png" alt="" width="40px"></button>
+
+		<div class="sidebar">
+			<div id="menu">
+				<!-- Contenido del menú -->
+				<div class="close-button">
+					<button id="closeBtn"><img src="img/close.png" alt="" width="30px"></button>
+				</div>
+				<a href="#">COMPRAR INMUEBLE</a>
+				<a href="#">RENTAR INMUEBLE</a>
+				<a href="#">VENDE TU PROPIEDAD</a>
+				<a href="#">ACERCA DE NOSOTROS</a>
+				<?php
+					session_start();
+					if(!isset($_SESSION['txtusuario'])) {
+						echo "<a href=\"login.php\">INICIAR SESIÓN</a>";
+					} else {
+						echo "<a href=\"php/logout.php\">CERRAR SESIÓN</a>";
+					}
+				?>
+			</div>
+		</div>
 
 	</nav>
+
+	<script src="js/sidebar.js"></script>
 </header>

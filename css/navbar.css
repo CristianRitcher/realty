@@ -5,101 +5,32 @@ html, body, header, footer{
     padding: 0;
 }
 
-
-
 /* css generales para la navbar */
 .navbar {
     
-    background-color: #ee3048;
+    background-color: black;
     color: #fff;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 50px 10px 50px;
+    padding: 10px 50px 20px 50px;
     margin: 0;
+    height: auto;
     
 }
 
 /* css para el logotipo */
-.logo img {
+.navbar-logo img {
     width: 200px;
     height: auto;
-}
-
-/* css para la lista de enlaces de navegación */
-.nav-links {
-    list-style: none;
-    display: flex;
-    gap: 50px;
-    padding-top: 20px;
-}
-
-.nav-links li {
-    font-size: 16px;
-}
-
-.nav-links a {
-    font-family: FONTSPRING DEMO - TT Commons Pro Demibold;
-    font-weight: 100;
-    text-decoration: none;
-    color: #fff;
-}
-
-/* css para el menú desplegable */
-.dropdown {
-    position: realtive;
-    
-    
-}
-.dropdown-content a {
-    color: gray;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: white;
-    z-index: 1;
-    list-style: none;
-    padding: 0;
-    
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-.dropdown-content li {
-    padding: 10px 20px;
-}
-
-/* Cambia el color de fondo de los elementos del menú desplegable al pasar el ratón sobre ellos */
-.dropdown-content li:hover {
-    background-color: #ee3048;
-    color: white;
-}
-
-.dropdown-content li a:hover {
-    background-color: #ee3048;
-    color: white;
-}
-
-.nav-links a:hover {
-    color: #711622;
-}
-
-
-.dropdown-content {
-    width: 250px;
+    margin-top: 6px;
 }
 
 /* Footer */
 
 footer {
     height: 500px;
-    background-color: #ee3048;
+    background-color: black;
     display: flex;
     justify-content: left;
     align-items: left;
@@ -172,4 +103,72 @@ footer {
     .recursos {
         margin-top: 60px;
     }
+}
+
+/* sidebar */
+.sidebar {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	right: 0;
+	background-color: black;
+	overflow-x: hidden;
+	transition: 0.5s;
+	padding-top: 20px;
+    z-index: 1000;
+}
+
+#openBtn, #closeBtn {
+	background: none;
+	border: none;
+	padding: 0;
+}
+
+.close-button {
+	width: 100%;
+	display: flex;
+	align-items: right;
+}
+
+#closeBtn {
+	margin-bottom: 40px;
+	filter: brightness(.5);
+	margin-left: 20px;
+}
+
+#closeBtn:hover {
+	filter: none;
+}
+
+#openBtn:hover {
+	filter: brightness(.8);
+}
+
+#menu {
+	padding: 0;
+}
+
+#menu a {
+	width: 320px;
+	padding: 15px 25px;
+	text-decoration: none;
+	font-size: 20px;
+	color: #818181;
+	display: block;
+	transition: 0.3s;
+	border: 1px solid rgb(40, 40, 40);
+	border-left: 0;
+	border-right: 0;
+}
+
+#menu a:hover {
+	color: #f1f1f1;
+}
+
+.content {
+	transition: margin-left .5s;
+	padding: 16px;
+	margin-left: 0;
 }

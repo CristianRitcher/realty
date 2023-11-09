@@ -3,6 +3,61 @@ body {
     font-weight: 100;
 }
 
+/* Cuadro de búsqueda*/
+.busqueda {
+	background-image: url('/img/imagen-inicio.jpeg');
+	background-color: grey;
+	background-blend-mode: multiply;
+	background-position: center;
+	background-size: cover;
+	height: 600px;
+	padding: 20px 40px 40px 40px;
+	display: flex;
+	flex-direction: column;
+}
+
+h1 {
+    color: white;
+    font-size: 76px;
+    font-weight: 300;
+}
+
+.input-group-text {
+    padding: 0;
+    border: none;
+}
+
+#buscar {
+    text-decoration: none;
+    font-size: 20px;
+    padding: 15px;
+    color: #ee3048;
+    border-radius: 0 5px 5px 0;
+}
+
+#buscar:hover {
+    color: white;
+    background-color: #ee3048; 
+}
+
+/* Barra de búsqueda */
+#operacion {
+	font-weight: 400;
+	font-size: 18px;
+}
+
+.barra-busqueda {
+	height:max-content;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex: 1;
+}
+
+.barra-busqueda form {
+	width: 800px;
+}
+
 .no-gutters {
     margin-right: 0;
     margin-left: 0;
@@ -42,48 +97,12 @@ body {
     display: flex;
     text-align: center;
     justify-content: center;
+    background-color: black;
+    border: 2px solid white;
+}
+
+#viewp:hover {
     background-color: #ee3048;
-    border: 2px solid #ee3048;
-}
-
-.busqueda {
-    background-color: #ee3048;
-    border-radius: 10px 0 0 10px;
-    padding: 20px;
-    margin: 20px -12px 20px 20px;
-}
-.mapa {
-    border-radius: 0 10px 10px 0;
-    padding: 0;
-    margin: 20px 20px 20px -12px;
-    height: 100%;
-}
-iframe {
-    height: 91%;
-    border-radius: 10px;
-}
-
-.row {
-    margin-top: 10px;
-}
-
-@media (max-width: 768px) {
-    .mapa, .busqueda {
-        margin: 0;
-        border-radius: 0;
-        
-    }
-    .row {
-        margin-top: 0;
-    }
-
-    .iframe {
-        border-radius: 0;
-    }
-    .mapa {
-        margin-top: 0;
-    }
-   
 }
 
 @media (max-width: 668px) {
@@ -93,22 +112,12 @@ iframe {
     }
 }
 
-#boton-buscar {
-    background-color: white;
-    color: black;
-}
-
-#boton-buscar:hover {
-    background-color: #ee3048;
-    border-color: white;
-    color: white;
-}
 
 
 #logo-bienvenida {
     width: 500px;
     height: auto;
-    margin: 60px auto 100px auto;
+    margin: 60px auto 10px auto;
 }
 
 #bienvenida {
@@ -126,4 +135,50 @@ iframe {
 
 h2 {
     font-weight: 100;
+}
+
+.operacion {
+    text-align: center;
+    padding: 10px;
+    height: 60px;
+    font-size: 20px;
+    color: white;
+    border: none;
+    background-color: #ee3048;
+    width: 130px;
+    border-radius: 5px 0 0 5px;
+    appearance: none;
+}
+
+/* Banner de venta */
+.banner-venta {
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgb(200, 200, 200);
+}
+
+.banner-venta p{
+    font-size: 24px;
+}
+
+#boton-venta {
+    display: flex;
+    justify-content: right;
+}
+
+.banner-venta #viewp {
+    width: 200px;
+}
+
+h2 {
+    color: #ee3048;
+    font-weight: 200;
+}
+
+h3 {
+    padding: 20px;
+    padding-bottom: 0;
+    font-size: 30px;
+    font-weight: 400;
 }
