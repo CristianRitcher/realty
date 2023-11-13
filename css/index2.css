@@ -19,7 +19,9 @@ body {
 h1 {
     color: white;
     font-size: 76px;
-    font-weight: 300;
+    font-weight: 500;
+    line-height: 1em;
+    margin-bottom: 20px;
 }
 
 .input-group-text {
@@ -137,18 +139,7 @@ h2 {
     font-weight: 100;
 }
 
-.operacion {
-    text-align: center;
-    padding: 10px;
-    height: 60px;
-    font-size: 20px;
-    color: white;
-    border: none;
-    background-color: #ee3048;
-    width: 130px;
-    border-radius: 5px 0 0 5px;
-    appearance: none;
-}
+
 
 /* Banner de venta */
 .banner-venta {
@@ -181,4 +172,8 @@ h3 {
     padding-bottom: 0;
     font-size: 30px;
     font-weight: 400;
+}
+
+select {
+    height: 60px;
 }

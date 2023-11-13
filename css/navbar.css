@@ -114,6 +114,7 @@ footer {
 	top: 0;
 	right: 0;
 	background-color: black;
+    opacity: .89;
 	overflow-x: hidden;
 	transition: 0.5s;
 	padding-top: 20px;

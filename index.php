@@ -23,31 +23,30 @@
 <body>
 
 	<!-- Cabezera -->
-		<div class="busqueda">
-			<!-- barra de búsqueda -->
-				<div class="barra-busqueda">
-					<form method="post">
-						<h1>Encuentra la casa que estabas buscado</h1>
-						<!-- barra de búsqueda -->
-							<div class=" input-group mb-3">
-								<span class="input-group-text" id="basic-addon1">
-								<select class="operacion"> 
-									<optgroup label="Tipo de operación"> 
-										<option value="comprar">Comprar</option> 
-										<option value="rentar">Rentar</option> 
-										<option value="vender">Vender</option> 
-									</optgroup> 
-								</select> 
-								</span>
-								<input type="text" class="form-control" aria-label="" aria-describedby="basic-addon2" placeholder="ej. Dirección, Ciudad, CP" id="busqueda">
-								<span class="input-group-text" id="basic-addon1" ><a href="propiedades.php" id="buscar">Buscar</a></span>
-							</div>
-						<!-- fin: barra de búsqueda -->
-					</form>
+	<div class="busqueda">
+		<!-- barra de búsqueda -->
+		<div class="barra-busqueda">
+			<form method="post">
+				<h1>Encuentra la casa que estabas buscado</h1>
+
+				<!-- barra de búsqueda -->
+				<div class=" input-group mb-3">
+					<span class="input-group-text" id="basic-addon1">
+						<select class="form-select" aria-label="Default select example">
+							<option value="comprar">Comprar</option>
+							<option value="rentar">Rentar</option>
+							<option value="traspasar">Traspasar</option>
+						</select>
+					</span>
+					<input type="text" class="form-control" aria-label="" aria-describedby="basic-addon2" placeholder="ej. Dirección, Ciudad, CP" id="busqueda">
+					<span class="input-group-text" id="basic-addon1" ><a href="propiedades.php" id="buscar">Buscar</a></span>
 				</div>
-			<!-- fin: arra de búsqueda -->
+
+			</form>
 		</div>
-	<!-- fin: cabezera -->
+
+	</div>
+	
 
 	<!-- Banner de venta -->
 	<div class="banner-venta">
@@ -182,20 +181,19 @@
 		</div>
 
 	</div>
-	<!-- Fin: Grupo de cartas -->
+	
 
 	<!-- Mensaje de bienvenida -->
-		<div class="row" id="bienvenida">
-			<img src="img/realty_logo_r.svg" id="logo-bienvenida">
-			<h2>BIENVENIDO A REALTY: LA PUERTA DE ENTRADA A TU NUEVO HOGAR</h2>
-			<p>
-					En realty, entendemos que un hogar no es solo un hogar, es un sueño hecho realidad. Nuestra misión es
-					ayudarte a encontrar la propiedad perfecta que se ajuste a tu estilo de vida y nececidades. Con años
-					de experiencia en bienes raíces, ofrecemos una amplia gama de opciones que van desde lujosas recidencias
-					hasta acogedores departamentos, todos diseñados para brindate la vida que mereces.
-			</p>
-		</div>
-	<!-- Fin: Mensaje de bienvenida -->
+	<div class="row" id="bienvenida">
+		<img src="img/realty_logo_r.svg" id="logo-bienvenida">
+		<h2>BIENVENIDO A REALTY: LA PUERTA DE ENTRADA A TU NUEVO HOGAR</h2>
+		<p>
+			En realty, entendemos que un hogar no es solo un hogar, es un sueño hecho realidad. Nuestra misión es
+			ayudarte a encontrar la propiedad perfecta que se ajuste a tu estilo de vida y nececidades. Con años
+			de experiencia en bienes raíces, ofrecemos una amplia gama de opciones que van desde lujosas recidencias
+			hasta acogedores departamentos, todos diseñados para brindate la vida que mereces.
+		</p>
+	</div>
 
 </body>
 
