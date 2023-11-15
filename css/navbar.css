@@ -7,8 +7,7 @@ html, body, header, footer{
 
 /* css generales para la navbar */
 .navbar {
-    
-    background-color: black;
+    background-color: rgb(10, 10, 10);
     color: #fff;
     display: flex;
     justify-content: space-between;
@@ -79,6 +78,11 @@ footer {
     margin: 0 15px 0 15px;
 }
 
+.recursos li {
+    list-style: none;
+    margin-top: 10px;
+}
+
 .recursos h3 {
     font-weight: 100;
 }
@@ -104,6 +108,7 @@ footer {
         margin-top: 60px;
     }
 }
+
 
 /* sidebar */
 .sidebar {

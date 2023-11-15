@@ -195,6 +195,14 @@
 		</p>
 	</div>
 
+	<h3>Cerca de ti</h3>
+
+	<div class="mapa">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3644.2490372045127!2d-104.55646302416747!3d24.022281678283395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x869bb0afe49269e1%3A0x43644f8b73e439ad!2sUniversidad%20Polit%C3%A9cnica%20de%20Durango!5e0!3m2!1sen!2smx!4v1699982463095!5m2!1sen!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+	</div>
+
+	
+
 </body>
 
 <?php include 'footer.html'?>
