@@ -1,4 +1,3 @@
-<?php include 'php/guardian.php'?>
 <?php include 'php/conn-vistas.php'?>
 
 <!DOCTYPE html>
@@ -18,7 +17,7 @@
 	<link rel="stylesheet" href="css/crud.css">
 </head >
 
-<?php include("navbar2.html");?>
+<?php include("navbar1.html");?>
 
 <body>
 

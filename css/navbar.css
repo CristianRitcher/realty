@@ -7,7 +7,7 @@ html, body, header, footer{
 
 /* css generales para la navbar */
 .navbar {
-    background-color: rgb(10, 10, 10);
+    background-color: rgb(20, 20, 20);
     color: #fff;
     display: flex;
     justify-content: space-between;
@@ -20,7 +20,7 @@ html, body, header, footer{
 
 /* css para el logotipo */
 .navbar-logo img {
-    width: 200px;
+    width: 160px;
     height: auto;
     margin-top: 6px;
 }
@@ -118,7 +118,7 @@ footer {
 	z-index: 1;
 	top: 0;
 	right: 0;
-	background-color: black;
+	background-color: rgb(20, 20, 20);
     opacity: .89;
 	overflow-x: hidden;
 	transition: 0.5s;

@@ -6,7 +6,7 @@ body {
 /* Cuadro de búsqueda*/
 .busqueda {
 	background-image: url('/img/imagen-inicio.jpeg');
-	background-color: grey;
+	background-color: rgb(179, 179, 179);
 	background-blend-mode: multiply;
 	background-position: center;
 	background-size: cover;
@@ -35,6 +35,7 @@ h1 {
     padding: 15px;
     color: #ee3048;
     border-radius: 0 5px 5px 0;
+    transition: 0.2s;
 }
 
 #buscar:hover {
@@ -176,4 +177,18 @@ h3 {
 
 select {
     height: 60px;
+}
+
+select:hover {
+    cursor: pointer;
+}
+
+/* mapa */
+.mapa {
+    padding: 20px;
+}
+
+iframe {
+    width: 100%;
+    border-radius: 5px;
 }
