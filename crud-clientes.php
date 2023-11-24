@@ -21,7 +21,7 @@
 
 <body>
 
-	<div class="">
+	<div class="contenido">
 
 		<div class="row" style="margin-top: 20px; text-align: right; margin-right: 10px;"">
 

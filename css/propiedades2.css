@@ -35,7 +35,6 @@ h4 {
 }
 
 
-
 .filtros {
     position: sticky;
     padding: 20px;
@@ -68,17 +67,29 @@ h4 {
 }
 
 #viewp {
+    color: white;
     display: flex;
     text-align: center;
     justify-content: center;
-    background-color: #ee3048;
-    border: 2px solid #ee3048;
+    background-color: rgb(60, 60, 60);
+    border: 2px solid rgb(60, 60, 60);
 }
 
 #viewp:hover {
-    background-color: white;
+    background-color: #ee3048;
     border-color: #ee3048;
-    color: #ee3048;
+    color: white;
+}
+
+#boton-p1 {
+    background-color: rgb(60, 60, 60);
+    border-color: rgb(60, 60, 60);
+}
+
+#boton-p1:hover {
+    background-color: #ee3048;
+    border-color: #ee3048;
+    
 }
 
 .card-deck {

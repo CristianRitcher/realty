@@ -5,6 +5,39 @@
 			<a href="index.php"><img src="img/realty_logo_b.svg" alt="" width="150px"></a>
 		</div>
 
+		<div class="sesion">
+			<div>
+				<?php
+					session_start();
+					if(!isset($_SESSION['txtusuario'])) {
+						echo "<div class=\"dropdown\">
+							<button class=\"btn btn-secondary dropdown-toggle\" type=\"button\" id=\"dropdownMenuButton1\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">
+							<img src=\"img/persona.png\" id=\"avatar\" width=\"30px\" height=\"30px\">
+							</button>
+							<ul class=\"dropdown-menu\" aria-labelledby=\"dropdownMenuButton1\">
+							<li><a class=\"dropdown-item\" href=\"#\">Action</a></li>
+							<li><a class=\"dropdown-item\" href=\"#\">Another action</a></li>
+							<li><a class=\"dropdown-item\" href=\"#\">Something else here</a></li>
+							</ul>
+						</div>";
+					}
+					else {
+						echo "<div class=\"dropdown\">
+							<button class=\"btn btn-secondary dropdown-toggle\" type=\"button\" id=\"dropdownMenuButton1\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">
+							Dropdown button
+							</button>
+							<ul class=\"dropdown-menu\" aria-labelledby=\"dropdownMenuButton1\">
+							<li><a class=\"dropdown-item\" href=\"#\">Action</a></li>
+							<li><a class=\"dropdown-item\" href=\"#\">Another action</a></li>
+							<li><a class=\"dropdown-item\" href=\"#\">Something else here</a></li>
+							</ul>
+						</div>";
+					}
+				?>
+			</div>
+
+		</div>
+
 		<button id="openBtn"><img src="img/menu.png" alt="" width="40px"></button>
 
 		<div class="sidebar">
@@ -31,4 +64,5 @@
 	</nav>
 
 	<script src="js/sidebar.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </header>
