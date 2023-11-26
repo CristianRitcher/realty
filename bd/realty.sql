@@ -2,10 +2,10 @@
 -- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
--- Servidor: localhost
--- Tiempo de generación: 28-10-2023 a las 06:51:07
--- Versión del servidor: 10.4.28-MariaDB
--- Versión de PHP: 8.2.4
+-- Host: localhost
+-- Generation Time: Nov 26, 2023 at 11:57 PM
+-- Server version: 10.4.28-MariaDB
+-- PHP Version: 8.2.4
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,13 +18,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de datos: `realty`
+-- Database: `realty`
 --
 
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `clientes`
+-- Table structure for table `clientes`
 --
 
 CREATE TABLE `clientes` (
@@ -34,13 +34,24 @@ CREATE TABLE `clientes` (
   `apellido_2` varchar(50) DEFAULT NULL,
   `correo` varchar(50) DEFAULT NULL,
   `telefono` char(10) NOT NULL,
-  `id_usuario` int(10) UNSIGNED ZEROFILL NOT NULL
+  `comentario` varchar(500) DEFAULT NULL,
+  `id_usuario` int(10) UNSIGNED ZEROFILL NOT NULL,
+  `contestado` int(1) NOT NULL DEFAULT 0,
+  `llamado` int(1) NOT NULL DEFAULT 0,
+  `interesado` int(1) NOT NULL DEFAULT 0
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `clientes`
+--
+
+INSERT INTO `clientes` (`id_cliente`, `nombre`, `apellido_1`, `apellido_2`, `correo`, `telefono`, `comentario`, `id_usuario`, `contestado`, `llamado`, `interesado`) VALUES
+(0000000006, 'Alberto', 'Muñoz', 'Pineda', 'albertomunoz@hotmail.com', '618273654', NULL, 0000000004, 0, 0, 0);
 
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `propiedades`
+-- Table structure for table `propiedades`
 --
 
 CREATE TABLE `propiedades` (
@@ -70,7 +81,7 @@ CREATE TABLE `propiedades` (
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `usuarios`
+-- Table structure for table `usuarios`
 --
 
 CREATE TABLE `usuarios` (
@@ -85,7 +96,7 @@ CREATE TABLE `usuarios` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Volcado de datos para la tabla `usuarios`
+-- Dumping data for table `usuarios`
 --
 
 INSERT INTO `usuarios` (`id_usuario`, `correo`, `contrasena`, `nombre`, `apellido_1`, `apellido_2`, `telefono`, `rol`) VALUES
@@ -99,63 +110,63 @@ INSERT INTO `usuarios` (`id_usuario`, `correo`, `contrasena`, `nombre`, `apellid
 (0000000011, 'marco@hotmail.com', 'realty', 'Marco', 'Rosas', 'Aguirre', '618000002', 1);
 
 --
--- Índices para tablas volcadas
+-- Indexes for dumped tables
 --
 
 --
--- Indices de la tabla `clientes`
+-- Indexes for table `clientes`
 --
 ALTER TABLE `clientes`
   ADD PRIMARY KEY (`id_cliente`),
   ADD KEY `id_usuario` (`id_usuario`);
 
 --
--- Indices de la tabla `propiedades`
+-- Indexes for table `propiedades`
 --
 ALTER TABLE `propiedades`
   ADD PRIMARY KEY (`id_propiedad`),
   ADD KEY `id_usuario` (`id_usuario`);
 
 --
--- Indices de la tabla `usuarios`
+-- Indexes for table `usuarios`
 --
 ALTER TABLE `usuarios`
   ADD PRIMARY KEY (`id_usuario`);
 
 --
--- AUTO_INCREMENT de las tablas volcadas
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT de la tabla `clientes`
+-- AUTO_INCREMENT for table `clientes`
 --
 ALTER TABLE `clientes`
-  MODIFY `id_cliente` int(10) UNSIGNED ZEROFILL NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id_cliente` int(10) UNSIGNED ZEROFILL NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
--- AUTO_INCREMENT de la tabla `propiedades`
+-- AUTO_INCREMENT for table `propiedades`
 --
 ALTER TABLE `propiedades`
   MODIFY `id_propiedad` int(10) UNSIGNED ZEROFILL NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT de la tabla `usuarios`
+-- AUTO_INCREMENT for table `usuarios`
 --
 ALTER TABLE `usuarios`
   MODIFY `id_usuario` int(10) UNSIGNED ZEROFILL NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
--- Restricciones para tablas volcadas
+-- Constraints for dumped tables
 --
 
 --
--- Filtros para la tabla `clientes`
+-- Constraints for table `clientes`
 --
 ALTER TABLE `clientes`
   ADD CONSTRAINT `clientes_ibfk_1` FOREIGN KEY (`id_usuario`) REFERENCES `usuarios` (`id_usuario`) ON UPDATE CASCADE;
 
 --
--- Filtros para la tabla `propiedades`
+-- Constraints for table `propiedades`
 --
 ALTER TABLE `propiedades`
   ADD CONSTRAINT `propiedades_ibfk_1` FOREIGN KEY (`id_usuario`) REFERENCES `usuarios` (`id_usuario`) ON UPDATE CASCADE;
