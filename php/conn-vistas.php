@@ -1,18 +1,8 @@
 <?php
 session_start();
-
-$dbhost = "localhost";
-$dbuser = "root";
-$dbpass = "";
-$dbname = "realty";
-
-
-$conn = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
-
-if (!$conn) 
-{
-	die("No hay conexión: ".mysqli_connect_error());
-
+$conn = mysqli_connect("localhost","root","","realty");
+if ($conn->connect_error) {
+	die("Conexión fallida: " . $conn->connect_error);
 }
 
 $nombre = $_SESSION["txtusuario"];

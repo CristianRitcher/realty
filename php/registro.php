@@ -1,6 +1,7 @@
 <?php
+    
     include 'conn.php';
-
+    
     if(isset($_POST['registrar'])){
         if(strlen($_POST['nombre'])     >= 1
         && strlen($_POST['apellido_1']) >= 1
