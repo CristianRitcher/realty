@@ -171,21 +171,56 @@
                 <div class="amenidades">
                     <h3>Amenidades</h3>
                     <div>
-                        <div class="amenidad">
-                            <img src="img/bed.png" alt="">
-                            <p>8</p>
+                        <div class="amenidades" id="amenidades">
+                            <div>
+                                <ul>
+                                    <li><p>Vista al Agua</p></li>
+                                    <li><p>Privacidad</p></li>
+                                    <li><p>Interior</p></li>
+                                    <li><p>Encimeras de piedra</p></li>
+                                    <li><p>Chimenea</p></li>
+                                    <li><p>Patio de recreo</p></li>
+                                    <li><p>Jardín</p></li>
+                                    <li><p>Piscina</p></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li><p>Aire Acondicionado</p></li>
+                                    <li><p>Oficina</p></li>
+                                    <li><p>Gimnasio</p></li>
+                                    <li><p>Techo alto</p></li>
+                                    <li><p>Chimenea</p></li>
+                                    <li><p>Garaje</p></li>
+                                    <li><p>Estufa de gas</p></li>
+                                    
+                                </ul>
+                            </div>
                         </div>
-                        <div class="amenidad">
-                            <img src="img/bathroom.png" alt="">
-                            <p>10</p>
-                        </div>
-                        <div class="amenidad">
-                            <img src="img/car.png" alt="">
-                            <p>4</p>
-                        </div>
-                        <div class="amenidad">
-                            <img src="img/group.png" alt="">
-                            <p>12</p>
+                        <div class="amenidades" id="amenidades">
+                            <div>
+                                <ul>
+                                    <li><p>Lavadora Secadora</p></li>
+                                    <li><p>Garaje</p></li>
+                                    <li><p>Isla de cocina</p></li>
+                                    <li><p>Bar</p></li>
+                                    <li><p>Chimenea</p></li>
+                                    <li><p>Terraza</p></li>
+                                    <li><p>Outdoor</p></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li><p>Vestidor</p></li>
+                                    <li><p>Cine</p></li>
+                                    <li><p>Biblioteca</p></li>
+                                    <li><p>Chimenea</p></li>
+                                    <li><p>Sala de juegos</p></li>
+                                    <li><p>Sótano</p></li>
+                                    <li><p>Cancha de Tenis</p></li>
+                                </ul>
+
+                            </div>
                         </div>
                     </div>
                 </div>
