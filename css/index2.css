@@ -5,7 +5,7 @@ body {
 
 /* Cuadro de búsqueda*/
 .busqueda {
-	background-image: url('/img/imagen-inicio.jpeg');
+	background-image: url('https://www.foryourmarriage.org/wp-content/uploads/2018/02/iStock-905902112_v2-e1631291645334.jpg');
 	background-color: rgb(179, 179, 179);
 	background-blend-mode: multiply;
 	background-position: center;
