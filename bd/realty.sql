@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Nov 26, 2023 at 11:57 PM
+-- Generation Time: Nov 29, 2023 at 05:52 PM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -46,7 +46,16 @@ CREATE TABLE `clientes` (
 --
 
 INSERT INTO `clientes` (`id_cliente`, `nombre`, `apellido_1`, `apellido_2`, `correo`, `telefono`, `comentario`, `id_usuario`, `contestado`, `llamado`, `interesado`) VALUES
-(0000000006, 'Alberto', 'Muñoz', 'Pineda', 'albertomunoz@hotmail.com', '618273654', NULL, 0000000004, 0, 0, 0);
+(0000000006, 'Alberto', 'Muñoz', 'Pineda', 'albertomunoz@hotmail.com', '618273654', NULL, 0000000004, 0, 1, 0),
+(0000000007, 'Amira', 'Bujdud', 'Solano', 'amir_dbuj@unipolidgo.edu.com', '6187652391', NULL, 0000000004, 1, 1, 1),
+(0000000008, 'Adriana', 'Mijares', 'de Castro', 'adrimik8723@outlook.com', '6189807463', NULL, 0000000004, 1, 1, 0),
+(0000000009, 'Fernando', 'Morales', 'Araujo', 'fer-chop1998@gmail.com', '6182893331', NULL, 0000000004, 1, 1, 0),
+(0000000010, 'Sofia', 'de la Parra', 'Palermo', 'sofia.parra@hotmail.com', '6188870021', NULL, 0000000004, 0, 1, 0),
+(0000000011, 'Mariela', 'Díaz', 'Salazar', 'mariela_diaz.ss@hotmail.com', '6184470001', NULL, 0000000004, 0, 0, 0),
+(0000000012, 'Gerardo', 'Medina', 'Müller', 'gera_magico@gmail.com', '6188889381', NULL, 0000000004, 0, 0, 0),
+(0000000013, 'Marco', 'Patiño', 'Jair', 'markk98@gmail.com', '6182893812', NULL, 0000000004, 1, 1, 1),
+(0000000014, 'Salma Sabrina', 'Fernandez', 'Haro', 'salma.sab1980@gmail.com', '6189983247', NULL, 0000000004, 1, 1, 0),
+(0000000015, 'Martina', 'Sierra', 'de Liz', 'mar_deliz@outlook.com', '6558372891', NULL, 0000000004, 0, 0, 0);
 
 -- --------------------------------------------------------
 
@@ -56,6 +65,7 @@ INSERT INTO `clientes` (`id_cliente`, `nombre`, `apellido_1`, `apellido_2`, `cor
 
 CREATE TABLE `propiedades` (
   `id_propiedad` int(10) UNSIGNED ZEROFILL NOT NULL,
+  `titulo` varchar(100) NOT NULL,
   `pais` varchar(20) NOT NULL,
   `estado` varchar(20) NOT NULL,
   `municipio` varchar(20) NOT NULL,
@@ -141,7 +151,7 @@ ALTER TABLE `usuarios`
 -- AUTO_INCREMENT for table `clientes`
 --
 ALTER TABLE `clientes`
-  MODIFY `id_cliente` int(10) UNSIGNED ZEROFILL NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id_cliente` int(10) UNSIGNED ZEROFILL NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT for table `propiedades`
