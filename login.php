@@ -33,11 +33,11 @@
             <form method="post" action="php/login.php">
             
                 <div class="log">   
-                <input type="text" name="txtusuario" placeholder="Usuario:">
+                <input type="text" name="txtusuario" placeholder="Usuario">
                 </div>  
 
                 <div class="log">  
-                <input type="password" name="txtpassword" placeholder="Contraseña:">
+                <input type="password" name="txtpassword" placeholder="Contraseña">
                 </div>  
                   
                 <div class="log">  

@@ -123,6 +123,8 @@ footer {
     .recursos {
         margin-top: 60px;
     }
+
+    
 }
 
 
@@ -134,8 +136,7 @@ footer {
 	z-index: 1;
 	top: 0;
 	right: 0;
-	background-color: rgb(20, 20, 20);
-    opacity: .89;
+	background-color: rgb(60, 60, 60);
 	overflow-x: hidden;
 	transition: 0.5s;
 	padding-top: 20px;
@@ -157,12 +158,12 @@ footer {
 #closeBtn {
     margin-top: 10px;
 	margin-bottom: 40px;
-	filter: brightness(.5);
 	margin-left: 20px;
 }
 
 #closeBtn:hover {
-	filter: none;
+	opacity: .4;
+    transition-duration: .5s;
 }
 
 #openBtn:hover {
@@ -178,16 +179,17 @@ footer {
 	padding: 15px 25px;
 	text-decoration: none;
 	font-size: 20px;
-	color: #818181;
+	color: white;
 	display: block;
 	transition: 0.3s;
-	border: 1px solid rgb(40, 40, 40);
+	border: none;
 	border-left: 0;
 	border-right: 0;
+    font-weight: 200;
 }
 
 #menu a:hover {
-	color: #f1f1f1;
+	font-weight: 700;
 }
 
 .content {
@@ -196,3 +198,10 @@ footer {
 	margin-left: 0;
 }
 
+#usuario {
+    width: 85%;
+    border-top: 1px solid gray;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

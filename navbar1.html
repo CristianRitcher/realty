@@ -46,6 +46,7 @@
 				<div class="close-button">
 					<button id="closeBtn"><img src="img/close.png" alt="" width="30px"></button>
 				</div>
+				<div id="usuario"></div>
 				<a href="#">COMPRAR INMUEBLE</a>
 				<a href="#">RENTAR INMUEBLE</a>
 				<a href="#">VENDE TU PROPIEDAD</a>
@@ -53,9 +54,13 @@
 				<?php
 					session_start();
 					if(!isset($_SESSION['txtusuario'])) {
+						echo "<div id=\"usuario\"></div>";
 						echo "<a href=\"login.php\">INICIAR SESIÓN</a>";
 					} else {
+						echo "<div id=\"usuario\"></div>";
+						echo "<a href=\"menu-control.php\" >MENÚ DE CONTROL</a>";
 						echo "<a href=\"php/logout.php\">CERRAR SESIÓN</a>";
+						
 					}
 				?>
 			</div>

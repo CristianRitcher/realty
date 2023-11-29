@@ -1,147 +1,254 @@
 html, body {
     padding: 0;
     margin: 0;
-}
-
-#content1 {
-    width: 100%;
-}
-
-#content2 {
-    width: 100%;
-    padding:0;
-}
-
-.carousel-item div {
-    overflow: hidden;
-
-}
-
-.carousel-item {
-    overflow: hidden;
-    border-radius: 10px 10px 0 0;
-    height: 500px;
-   
-}
-
-.carousel-item img {
-    border-radius: 10px 10px 0 0;
-    min-height: 100%;
-    min-width: 800px;
-}
-.property-info {
     font-family: FONTSPRING DEMO - TT Commons Pro Demibold;
-    font-weight: 200;
-    font-size: 20px;
-    color: rgb(68, 68, 68);
-}
-h2 {
-    font-weight: 200;
-    font-size: 50px;
-    color: #ee3048;
-    
+    font-weight: 100;
 }
 
-#general {
-    margin: 20px 0 20px 0;
+.galeria {
     display: flex;
-    border-top: 1px solid gray;
-    border-bottom: 1px solid gray;
-    padding-top: 15px;
-    color: gray;
-    font-size: 16px;
-    gap: 20px;
+}
+
+#gal0 {
+    width: 100%;
+}
+
+#gal01, #gal02, #gal021, #gal022 {
+    width: 50%;
+}
+
+#gal01 img, 
+#gal021 img, 
+#gal022 img {
+    width: 100%;
+}
+
+#boton_modal {
+    padding: 0;
+    border: none;
+}
+
+.contenido {
+    display: flex;
+    flex-direction: column;
+}
+
+.info_propiedad {
+    display: flex;
+    flex-direction: row;
 }
 
 .caracteristicas {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    margin-top: 20px;
-}
-.amenidad {
-    display: flex;
-}
-.amenidad img {
-    width: 30px;
-    height: 30px;
-    margin-right: 10px;
+    flex: 1;
 }
 
-#descripcion {
-    font-family: FONTSPRING DEMO - TT Commons Pro Demibold;
-    font-weight: 200;
-    font-size: 20px;
-    color: white;
-    margin: 0 0 30px 0;
+.amenidad {
+    display: flex;
+    gap: 10px;
+}
+
+.amenidad img {
+    width: 36px;
+    height: 36px;
+}
+
+/* contacto */
+
+.contacto_agente {
+    width: 360px;
+    height: 100%;
+    padding: 15px;
+    margin: 30px 60px 30px 0;
+    box-shadow: 5px 5px 10px rgb(200, 200, 200);
+    color: gray;
+    top: 30px;
+    position: sticky;
+}
+
+.agente {
+    display: flex;
+    border-bottom: 1px solid #ee3048;
+    margin-bottom: 15px;
+}
+
+.agente img {
+    margin: 0 15px 15px 0;
+}
+
+.agente p {
+    padding-top: 15px;
+}
+
+.contacto_agente input {
     width: 100%;
-    border-radius: 0 0 10px 10px;
-    background-color: rgb(40, 40, 40);
-    padding: 20px;
+    height: 40px;
+    margin-bottom: 15px;
+    border: none;
+    border: 1px solid rgb(200, 200, 200);
+    padding-left: 5px;
+    border-radius: 5px;
+}
+
+.mensaje_sugerido {
+    display: flex;
+    font-size: 12px;
+    gap: 5px;
+    margin-bottom: 15px;
+}
+
+.mensaje_sugerido div {
+    flex: 1;
+    height: 70px;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px rgb(200, 200, 200);
+}
+
+.mensaje_sugerido div:hover {
+    cursor: pointer;
+    box-shadow: inset gray 1px 1px 4px -1px;
+    background-color: rgb(253, 253, 253);
+}
+
+
+#checkbox {
+    display: flex;
+}
+
+#checkbox input{
+    width: auto;
+    height: 28px;
+    margin-bottom: 0;
+    margin-right: 15px ;
+}
+
+textarea {
+    width: 100%;
+    border: 1px solid rgb(200, 200, 200);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#enviar {
+    background-color: rgb(60, 60, 60);
+    color: white;
+}
+
+#enviar:hover {
+    background-color: #ee3048;
+}
+
+.telefono .dropdown button {
+    width: 70px;
+    height: 40px;
+    border-radius: 5px 0 0 5px;
+    background-color: rgb(60, 60, 60);
+    border-color: rgb(60, 60, 60);
+    color: white;
+}
+
+.telefono {
+    display: flex;
+}
+
+.telefono input {
+    border-radius: 0 5px 5px 0;
+}
+
+/* caracteristicas */
+
+.caracteristicas {
+    margin: 30px 60px 30px 60px;
 }
 
 iframe {
-    border-radius: 10px;
-    height: 200px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.contacto-agente {
-    
-    display: flex;
-    flex-direction: column;
-    padding: 0;
-    padding-bottom: 20px;
-    margin-top: 20px;
-    border-radius: 10px;
-    height: 100%;
     width: 100%;
-    background-color: #ee3048;
-    margin-bottom: 60px;
+    height: 400px;
 }
 
-.info-agente {
-    display: flex;
-    gap: 30px;
-    margin-bottom: 30px;
-    margin: auto;
-    align-items: center;
-    font-size: 18px;
+#more {display: none;}
+
+#precio,  .info_propiedad h2, .info_propiedad h3 {
+    color: #ee3048;
+    font-size: 34px;
+    font-weight: 100;
+    
 }
 
-
-.info-agente p {
-    margin: -3px;
+#precio {
     color: black;
+    font-weight: 200;
 }
 
-.medios {
-    
-    display: flex;
-    margin-top: 20px;
-    width: 100%;
-}
-.medio {
-    margin: auto;
-    padding: 10px;
-    border-radius: 10px;
-    border: 2px solid #ee3048;
+
+
+.info_propiedad h2 {
+    color: black;
+    font-weight: 200;
 }
 
-.medio:hover {
-    border-color: white;
-    cursor: pointer;
+
+#gen {
+    text-align: left;
+    color: gray;
 }
 
-.info-agente {
-    width: 100%;
-    height: 100%;
-    padding: 10px;
-    border: 0;
+#myBtn {
     background-color: white;
+    border: white;
+    color: black;
+    font-weight: 300;
+    padding: 0;
+    margin-bottom: 30px;
 }
 
+.amenidades div {
+    display: flex;
+    justify-content: space-between;
+}
 
+.amenidades div p {
+    font-size: 36px;
+}
 
+@media (max-width: 820px) {
+    .info_propiedad {
+        flex-direction: column;
+    }
+    .contacto_agente {
+        margin: 60px;
+        margin-top: 30px;
+        width: auto;
+    }
+    .galeria {
+        width: 100%;
+        flex-direction: column;
+    }
+    #gal01 {
+        width: 100%;
+    }
+    #gal02 {
+        width: 100%;
+        display: flex;
+    }
+    #gal021, #gal022 {
+        flex-direction: row;
+    }
+    
+}
 
+.modal-content {
+    background-color: rgb(0, 0, 0, 0) !important;
+    border: none;
+}
+
+.modal-header {
+    border: none;
+}
+
+.modal-header button {
+    position: relative;
+    top: 60px;
+    right: 10px;
+    z-index: 100;
+}

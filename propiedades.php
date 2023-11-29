@@ -22,6 +22,7 @@
 <body>
     <div class="contenido">
     <div class="row no-gutters">
+		<!-- Filtros -->
         <div class="col-md-3">
             <div class="filtros">
                 <h4>Filtros de Búsqueda</h4>
@@ -110,6 +111,7 @@
         </div>
 
         <div class="col-md-9">
+
             <!-- Silider -->
 			<div id="slider" class="carousel slide" data-bs-ride="carousel">
 				<div class="carousel-inner" >
@@ -157,7 +159,7 @@
 				</button>
 			</div>
 
-            <!-- Grupo de cartas 1 -->
+            <!-- Grupo de cartas -->
 			<div class="card-deck">
 				<!-- card 1  -->
 				<div class="card">
@@ -266,236 +268,6 @@
 						<p class="card-text">8 huéspedes - 4 habitaciones - 6 camas - 3 baños</p>
 						<!-- precios de propiedades  -->
 						<p class="precios"><strong>$1820</strong> por noche</p>
-						<!-- boton ver propiedades  -->
-						<a id="viewp" href="#" class="btn btn-primary">Ver propiedad</a>
-					</div>
-				</div>
-			</div>
-
-			<!-- Grupo de cartas 2 -->
-			<div class="card-deck">
-				<!-- card 1  -->
-				<div class="card">
-					<!-- carousel -->
-					<div id="slider-4" class="carousel slide">
-						<div class="carousel-inner">
-							<div class="carousel-item active">
-								<img src="img/tercera_habitacion_mzt_1.png" class="d-block w-100" alt="">
-							</div>
-							<div class="carousel-item ">
-								<img src="img/tercera_habitacion_mzt_2.png" class="d-block w-100" alt="">
-							</div>
-							<div class="carousel-item ">
-								<img src="img/tercera_habitacion_mzt_3.png" class="d-block w-100" alt="">
-							</div>
-						</div>
-						<button class="carousel-control-prev" type="button" data-bs-target="#slider-4"
-							data-bs-slide="prev">
-							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-							<span class="visually-hidden">Previous</span>
-						</button>
-						<button class="carousel-control-next" type="button" data-bs-target="#slider-4"
-							data-bs-slide="next">
-							<span class="carousel-control-next-icon" aria-hidden="true"></span>
-							<span class="visually-hidden">Next</span>
-						</button>
-					</div>
-					<!-- fin carousel  -->
-
-					<div class="card-body">
-						<h5 class="card-title">Alojamiento entero: vivienda rentada en Mazatlán, México</h5>
-						<p class="card-text">2 huéspedes - 1 habitación - 1 cama - 1 baño</p>
-						<!-- precios de propiedades  -->
-						<p class="precios"><strong>$1710</strong> por noche</p>
-						<!-- boton ver propiedades  -->
-						<a id="viewp" href="#" class="btn btn-primary">Ver propiedad</a>
-					</div>
-				</div>
-				<!-- card 2  -->
-				<div class="card">
-					<!-- carousel -->
-					<div id="slider-5" class="carousel slide">
-						<div class="carousel-inner">
-							<div class="carousel-item active">
-								<img src="img/cuarta_habitacion_mzt_1.png" class="d-block w-100" alt="">
-							</div>
-							<div class="carousel-item ">
-								<img src="img/cuarta_habitacion_mzt_2.png" class="d-block w-100" alt="">
-							</div>
-							<div class="carousel-item ">
-								<img src="img/cuarta_habitacion_mzt_3.png" class="d-block w-100" alt="">
-							</div>
-						</div>
-						<button class="carousel-control-prev" type="button" data-bs-target="#slider-5"
-							data-bs-slide="prev">
-							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-							<span class="visually-hidden">Previous</span>
-						</button>
-						<button class="carousel-control-next" type="button" data-bs-target="#slider-5"
-							data-bs-slide="next">
-							<span class="carousel-control-next-icon" aria-hidden="true"></span>
-							<span class="visually-hidden">Next</span>
-						</button>
-					</div>
-					<!-- fin carousel  -->
-
-					<div class="card-body">
-						<h5 class="card-title">Alojamiento entero: condominio en Mazatlán, México</h5>
-						<p class="card-text">6 huéspedes - 2 habitaciones3 camas - 2 baños</p>
-						<!-- precios de propiedades  -->
-						<p class="precios"><strong>$1980</strong> por noche</p>
-						<!-- boton ver propiedades  -->
-						<a id="viewp" href="#" class="btn btn-primary">Ver propiedad</a>
-					</div>
-				</div>
-				<!-- card 3  -->
-				<div class="card">
-					<!-- carousel -->
-					<div id="slider-6" class="carousel slide">
-						<div class="carousel-inner">
-							<div class="carousel-item active">
-								<img src="img/quinta_habitacion_mzt_1.png" class="d-block w-100" alt="">
-							</div>
-							<div class="carousel-item ">
-								<img src="img/quinta_habitacion_mzt_2.png" class="d-block w-100" alt="">
-							</div>
-							<div class="carousel-item ">
-								<img src="img/quinta_habitacion_mzt_3.png" class="d-block w-100" alt="">
-							</div>
-						</div>
-						<button class="carousel-control-prev" type="button" data-bs-target="#slider-6"
-							data-bs-slide="prev">
-							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-							<span class="visually-hidden">Previous</span>
-						</button>
-						<button class="carousel-control-next" type="button" data-bs-target="#slider-6"
-							data-bs-slide="next">
-							<span class="carousel-control-next-icon" aria-hidden="true"></span>
-							<span class="visually-hidden">Next</span>
-						</button>
-					</div>
-					<!-- fin carousel  -->
-
-					<div class="card-body">
-						<h5 class="card-title">Alojamiento entero: condominio en Mazatlán, México</h5>
-						<p class="card-text">8 huéspedes - 4 habitaciones - 6 camas - 3 baños</p>
-						<!-- precios de propiedades  -->
-						<p class="precios"><strong>$2120</strong> por noche</p>
-						<!-- boton ver propiedades  -->
-						<a id="viewp" href="#" class="btn btn-primary">Ver propiedad</a>
-					</div>
-				</div>
-			</div>
-
-			<!-- Grupo de cartas 3 -->
-			<div class="card-deck">
-				<!-- card 1  -->
-				<div class="card">
-					<!-- carousel -->
-					<div id="slider-7" class="carousel slide">
-						<div class="carousel-inner">
-							<div class="carousel-item active">
-								<img src="img/sexta_habitacion_mzt_1.png" class="d-block w-100" alt="">
-							</div>
-							<div class="carousel-item ">
-								<img src="img/sexta_habitacion_mzt_2.png" class="d-block w-100" alt="">
-							</div>
-							<div class="carousel-item ">
-								<img src="img/sexta_habitacion_mzt_3.png" class="d-block w-100" alt="">
-							</div>
-						</div>
-						<button class="carousel-control-prev" type="button" data-bs-target="#slider-7"
-							data-bs-slide="prev">
-							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-							<span class="visually-hidden">Previous</span>
-						</button>
-						<button class="carousel-control-next" type="button" data-bs-target="#slider-7"
-							data-bs-slide="next">
-							<span class="carousel-control-next-icon" aria-hidden="true"></span>
-							<span class="visually-hidden">Next</span>
-						</button>
-					</div>
-					<!-- fin carousel  -->
-
-					<div class="card-body">
-						<h5 class="card-title">Alojamiento entero: condominio en Mazatlán, México</h5>
-						<p class="card-text">7 huéspedes - 2 habitaciones - 3 camas - 2 baños</p>
-						<!-- precios de propiedades  -->
-						<p class="precios"><strong>$1609</strong> por noche</p>
-						<!-- boton ver propiedades  -->
-						<a id="viewp" href="#" class="btn btn-primary">Ver propiedad</a>
-					</div>
-				</div>
-				<!-- card 2  -->
-				<div class="card">
-					<!-- carousel -->
-					<div id="slider-8" class="carousel slide">
-						<div class="carousel-inner">
-							<div class="carousel-item active">
-								<img src="img/septima_habitacion_mzt_1.1.png" class="d-block w-100" alt="">
-							</div>
-							<div class="carousel-item ">
-								<img src="img/septima_habitacion_mzt_2.png" class="d-block w-100" alt="">
-							</div>
-							<div class="carousel-item ">
-								<img src="img/septima_habitacion_mzt_3.png" class="d-block w-100" alt="">
-							</div>
-						</div>
-						<button class="carousel-control-prev" type="button" data-bs-target="#slider-8"
-							data-bs-slide="prev">
-							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-							<span class="visually-hidden">Previous</span>
-						</button>
-						<button class="carousel-control-next" type="button" data-bs-target="#slider-8"
-							data-bs-slide="next">
-							<span class="carousel-control-next-icon" aria-hidden="true"></span>
-							<span class="visually-hidden">Next</span>
-						</button>
-					</div>
-					<!-- fin carousel  -->
-
-					<div class="card-body">
-						<h5 class="card-title">Alojamiento entero: vivienda rentada en Mazatlán, México</h5>
-						<p class="card-text">4 huéspedes - 2 habitaciones - 2 camas - 2 baños</p>
-						<!-- precios de propiedades  -->
-						<p class="precios"><strong>$1570</strong> por noche</p>
-						<!-- boton ver propiedades  -->
-						<a id="viewp" href="#" class="btn btn-primary">Ver propiedad</a>
-					</div>
-				</div>
-				<!-- card 3  -->
-				<div class="card">
-					<!-- carousel -->
-					<div id="slider-9" class="carousel slide">
-						<div class="carousel-inner">
-							<div class="carousel-item active">
-								<img src="img/octava_habitacion_mzt_1.png" class="d-block w-100" alt="">
-							</div>
-							<div class="carousel-item ">
-								<img src="img/octava_habitacion_mzt_2.png" class="d-block w-100" alt="">
-							</div>
-							<div class="carousel-item ">
-								<img src="img/octava_habitacion_mzt_3.png" class="d-block w-100" alt="">
-							</div>
-						</div>
-						<button class="carousel-control-prev" type="button" data-bs-target="#slider-9"
-							data-bs-slide="prev">
-							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-							<span class="visually-hidden">Previous</span>
-						</button>
-						<button class="carousel-control-next" type="button" data-bs-target="#slider-9"
-							data-bs-slide="next">
-							<span class="carousel-control-next-icon" aria-hidden="true"></span>
-							<span class="visually-hidden">Next</span>
-						</button>
-					</div>
-					<!-- fin carousel  -->
-
-					<div class="card-body">
-						<h5 class="card-title">Alojamiento entero: condominio en Mazatlán, México</h5>
-						<p class="card-text">8 huéspedes - 4 habitaciones - 6 camas - 3 baños</p>
-						<!-- precios de propiedades  -->
-						<p class="precios"><strong>$1860</strong> por noche</p>
 						<!-- boton ver propiedades  -->
 						<a id="viewp" href="#" class="btn btn-primary">Ver propiedad</a>
 					</div>
