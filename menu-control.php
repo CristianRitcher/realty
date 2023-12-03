@@ -52,6 +52,9 @@
             <div class="propiedades">
                 <a href="propiedades.php"><button>PROPIEDADES</button></a>
             </div>
+            <div class="crud propiedades">
+                <a href="crud-propiedades.php"><button>CRUD PROPIEDADES</button></a>
+            </div>
             <div class="img-logo">
                 <img src="img/realty_logo_r.svg" alt="Logo">
             </div>
