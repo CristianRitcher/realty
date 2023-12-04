@@ -3,7 +3,7 @@
     if(isset($_GET['id'])) {
         $id = $_GET['id'];
 
-        $query = "DELETE FROM cliente WHERE id_cliente = '$id'";
+        $query = "DELETE FROM clientes WHERE id_cliente = '$id'";
         $resultado = mysqli_query($conn, $query);
 
         if($resultado){

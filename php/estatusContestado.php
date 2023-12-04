@@ -1,5 +1,5 @@
 <?php
-include 'conn-vistas.php';
+include ('conn-vistas.php');
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Obtener el estado del checkbox del formulario

@@ -6,7 +6,7 @@
             $id = $_GET['id'];
             $comentario = $_POST['inputComentar'];
             
-            $query = "UPDATE cliente set comentario = '$comentario' WHERE id_cliente = '$id'";
+            $query = "UPDATE clientes set comentario = '$comentario' WHERE id_cliente = '$id'";
             $resultado = mysqli_query($conn, $query);
 
             if($resultado){
@@ -31,7 +31,7 @@
             $telefono = trim($_POST['Etelefono']);
             $correo = trim($_POST['Ecorreo']);
       
-            $query = "UPDATE cliente set nombre = '$nombre', apellido_1 = '$apellido_1', apellido_2 = '$apellido_2', telefono = '$telefono', correo = '$correo' WHERE id_cliente = '$id'";
+            $query = "UPDATE clientes set nombre = '$nombre', apellido_1 = '$apellido_1', apellido_2 = '$apellido_2', telefono = '$telefono', correo = '$correo' WHERE id_cliente = '$id'";
             $resultado = mysqli_query($conn, $query);
             
             if($resultado){

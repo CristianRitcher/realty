@@ -1,5 +1,3 @@
-<!-- include 'php/guardian.php'-->
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -303,12 +301,12 @@
 													<input class="btn btn-secondary editar" name="editar" type="button" value="Editar">
 													<input class="btn btn-primary guardar hidden" name="guardar" type="submit" value="Guardar">
 													<input class="btn btn-danger cancelarEditar hidden" name="cancelarEditar" type="button" value="Cancelar">
-													<button type="button" class="btn btn-primary eliminar" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Eliminar</button>
+													<button type="button" class="btn btn-primary eliminar" data-bs-toggle="modal" data-bs-target="#modalEliminar_<?php echo $id; ?>">Eliminar</button>
 												</div>
 												
 
 												<!-- Modal -->
-												<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+												<div class="modal fade" id="modalEliminar_<?php echo $id; ?>" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
 													<div class="modal-dialog">
 														<div class="modal-content">
 															<div class="modal-header">
