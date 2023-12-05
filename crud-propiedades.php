@@ -56,7 +56,7 @@
                             </div>
                             <div class="modal-body">
                                 <!-- Formulario para agregar propiedad -->
-                                <form action="php/registro_propiedad.php" method="POST">
+                                <form action="php/registro_propiedad.php" method="POST" enctype="multipart/form-data">
                                     <!-- Agrega aquí los campos necesarios para la propiedad -->
                                     <input name="titulo" class="form-control mb-3" type="text" placeholder="Título">
                                     <input name="pais" class="form-control mb-3" type="text" placeholder="País">
@@ -118,6 +118,14 @@
                                         <input type="number" class="form-control" name="jardin_area" id="jardin_area" placeholder="Área del jardín">
                                     </div>
                                     <input name="descripcion" class="form-control mb-3" type="text" placeholder="Descripción">
+                                    <input name="imagen1" class="form-control mb-3" type="file" placeholder="Subir imagén">
+                                    <input name="imagen2" class="form-control mb-3" type="file" placeholder="Subir imagén">
+                                    <input name="imagen3" class="form-control mb-3" type="file" placeholder="Subir imagén">
+                                    <input name="imagen4" class="form-control mb-3" type="file" placeholder="Subir imagén">
+                                    <input name="imagen5" class="form-control mb-3" type="file" placeholder="Subir imagén">
+                                    <input name="imagen6" class="form-control mb-3" type="file" placeholder="Subir imagén">
+                                    <input name="imagen7" class="form-control mb-3" type="file" placeholder="Subir imagén">
+                                    <input name="imagen8" class="form-control mb-3" type="file" placeholder="Subir imagén">
                                     <!-- ... Agrega los demás campos ... -->
                                     <input name="registrar_propiedad" class="btn" type="submit" value="Registrar Propiedad">
                                 </form>
@@ -169,6 +177,14 @@
                         <th scope="col">Área del jardín</th>
                         <th scope="col">Piscina</th>
                         <th scope="col">Descripción</th>
+                        <th scope="col">Imagén1ㅤ</th>
+                        <th scope="col">Imagén2ㅤ</th>
+                        <th scope="col">Imagén3ㅤ</th>
+                        <th scope="col">Imagén4ㅤ</th>
+                        <th scope="col">Imagén5ㅤ</th>
+                        <th scope="col">Imagén6ㅤ</th>
+                        <th scope="col">Imagén7ㅤ</th>
+                        <th scope="col">Imagén8ㅤ</th>
                         <!-- ... Agrega los demás encabezados de columna ... -->
                         <th scope="col">Acciones</th>
                     </tr>
@@ -275,7 +291,86 @@
                                     <label class="label_descripcion"><?php echo $row['descripcion']; ?></label>
                                     <input class="form-control input_descripcion hidden" type="text" class="form-control" name="Edescripcion" value="<?php echo $row['descripcion']; ?>" placeholder="Descripción">
                                 </td>
-                                <!-- ... Agrega las demás celdas de datos ... -->
+                                <td>
+                                    <?php if (isset($row['imagen1']) && $row['imagen1'] !== 'sin_imagen.jpg'): ?>
+                                        <a href="img/<?php echo $row['imagen1']; ?>" data-lightbox="property-gallery" data-title="Propiedad: <?php echo $row['titulo']; ?>">
+                                            <label class="label_imagen1"><img class="thumbnail-image" src="img/<?php echo $row['imagen1']; ?>" alt="Imagen de la propiedad"></label>
+                                        </a>
+                                    <?php else: ?>
+                                        <label class="label_imagen1"></label>
+                                    <?php endif; ?>
+                                    <input name="Eimagen1" class="form-control input_imagen1 hidden" type="file" accept="image/*">
+                                </td>
+                                <td>
+                                    <?php if (isset($row['imagen2']) && $row['imagen2'] !== 'sin_imagen.jpg'): ?>
+                                        <a href="img/<?php echo $row['imagen2']; ?>" data-lightbox="property-gallery" data-title="Propiedad: <?php echo $row['titulo']; ?>">
+                                            <label class="label_imagen2"><img class="thumbnail-image" src="img/<?php echo $row['imagen2']; ?>" alt="Imagen de la propiedad"></label>
+                                        </a>
+                                    <?php else: ?>
+                                        <label class="label_imagen2"></label>
+                                    <?php endif; ?>
+                                    <input name="Eimagen2" class="form-control input_imagen2 hidden" type="file" accept="image/*">
+                                </td>
+                                <td>
+                                    <?php if (isset($row['imagen3']) && $row['imagen3'] !== 'sin_imagen.jpg'): ?>
+                                        <a href="img/<?php echo $row['imagen3']; ?>" data-lightbox="property-gallery" data-title="Propiedad: <?php echo $row['titulo']; ?>">
+                                            <label class="label_imagen3"><img class="thumbnail-image" src="img/<?php echo $row['imagen3']; ?>" alt="Imagen de la propiedad"></label>
+                                        </a>
+                                    <?php else: ?>
+                                        <label class="label_imagen3"></label>
+                                    <?php endif; ?>
+                                    <input name="Eimagen3" class="form-control input_imagen3 hidden" type="file" accept="image/*">
+                                </td>
+                                <td>
+                                    <?php if (isset($row['imagen4']) && $row['imagen4'] !== 'sin_imagen.jpg'): ?>
+                                        <a href="img/<?php echo $row['imagen4']; ?>" data-lightbox="property-gallery" data-title="Propiedad: <?php echo $row['titulo']; ?>">
+                                            <label class="label_imagen4"><img class="thumbnail-image" src="img/<?php echo $row['imagen4']; ?>" alt="Imagen de la propiedad"></label>
+                                        </a>
+                                    <?php else: ?>
+                                        <label class="label_imagen4"></label>
+                                    <?php endif; ?>
+                                    <input name="Eimagen4" class="form-control input_imagen4 hidden" type="file" accept="image/*">
+                                </td>
+                                <td>
+                                    <?php if (isset($row['imagen5']) && $row['imagen5'] !== 'sin_imagen.jpg'): ?>
+                                        <a href="img/<?php echo $row['imagen5']; ?>" data-lightbox="property-gallery" data-title="Propiedad: <?php echo $row['titulo']; ?>">
+                                            <label class="label_imagen5"><img class="thumbnail-image" src="img/<?php echo $row['imagen5']; ?>" alt="Imagen de la propiedad"></label>
+                                        </a>
+                                    <?php else: ?>
+                                        <label class="label_imagen5"></label>
+                                    <?php endif; ?>
+                                    <input name="Eimagen5" class="form-control input_imagen5 hidden" type="file" accept="image/*">
+                                </td>
+                                <td>
+                                    <?php if (isset($row['imagen6']) && $row['imagen6'] !== 'sin_imagen.jpg'): ?>
+                                        <a href="img/<?php echo $row['imagen6']; ?>" data-lightbox="property-gallery" data-title="Propiedad: <?php echo $row['titulo']; ?>">
+                                            <label class="label_imagen6"><img class="thumbnail-image" src="img/<?php echo $row['imagen6']; ?>" alt="Imagen de la propiedad"></label>
+                                        </a>
+                                    <?php else: ?>
+                                        <label class="label_imagen6"></label>
+                                    <?php endif; ?>
+                                    <input name="Eimagen6" class="form-control input_imagen6 hidden" type="file" accept="image/*">
+                                </td>
+                                <td>
+                                    <?php if (isset($row['imagen7']) && $row['imagen7'] !== 'sin_imagen.jpg'): ?>
+                                        <a href="img/<?php echo $row['imagen7']; ?>" data-lightbox="property-gallery" data-title="Propiedad: <?php echo $row['titulo']; ?>">
+                                            <label class="label_imagen7"><img class="thumbnail-image" src="img/<?php echo $row['imagen7']; ?>" alt="Imagen de la propiedad"></label>
+                                        </a>
+                                    <?php else: ?>
+                                        <label class="label_imagen7"></label>
+                                    <?php endif; ?>
+                                    <input name="Eimagen7" class="form-control input_imagen7 hidden" type="file" accept="image/*">
+                                </td>
+                                <td>
+                                    <?php if (isset($row['imagen8']) && $row['imagen8'] !== 'casa.jpg'): ?>
+                                        <a href="img/<?php echo $row['imagen8']; ?>" data-lightbox="property-gallery" data-title="Propiedad: <?php echo $row['titulo']; ?>">
+                                            <label class="label_imagen8"><img class="thumbnail-image" src="img/<?php echo $row['imagen8']; ?>" alt="Imagen de la propiedad"></label>
+                                        </a>
+                                    <?php else: ?>
+                                        <label class="label_imagen8"></label>
+                                    <?php endif; ?>
+                                    <input name="Eimagen8" class="form-control input_imagen8 hidden" type="file" accept="image/*">
+                                </td>
                                 <td>
                                     <div class="d-flex">
                                         <input class="btn btn-secondary editar" name="editar" type="button" value="Editar">
