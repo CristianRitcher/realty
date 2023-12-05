@@ -1,4 +1,4 @@
-<!-- include 'php/guardian.php'-->
+<?php include ('php/guardian.php') ?>
 
 <!DOCTYPE html>
 <html lang="en">
