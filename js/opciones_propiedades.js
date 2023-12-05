@@ -30,6 +30,14 @@ document.addEventListener("DOMContentLoaded", function() {
         var labelJardin_area = fila.querySelector(".label_jardin_area");
         var labelPiscina = fila.querySelector(".label_piscina");
         var labelDescripcion = fila.querySelector(".label_descripcion");
+        var labelImagen1 = fila.querySelector(".label_imagen1");
+        var labelImagen2 = fila.querySelector(".label_imagen2");
+        var labelImagen3 = fila.querySelector(".label_imagen3");
+        var labelImagen4 = fila.querySelector(".label_imagen4");
+        var labelImagen5 = fila.querySelector(".label_imagen5");
+        var labelImagen6 = fila.querySelector(".label_imagen6");
+        var labelImagen7 = fila.querySelector(".label_imagen7");
+        var labelImagen8 = fila.querySelector(".label_imagen8");
 
         // ... Agrega las demás etiquetas específicas de las propiedades ...
 
@@ -53,6 +61,14 @@ document.addEventListener("DOMContentLoaded", function() {
         var inputJardin_area = fila.querySelector(".input_jardin_area");
         var inputPiscina = fila.querySelector(".input_piscina");
         var inputDescripcion = fila.querySelector(".input_descripcion");
+        var inputImagen1 = fila.querySelector(".input_imagen1");
+        var inputImagen2 = fila.querySelector(".input_imagen2");
+        var inputImagen3 = fila.querySelector(".input_imagen3");
+        var inputImagen4 = fila.querySelector(".input_imagen4");
+        var inputImagen5 = fila.querySelector(".input_imagen5");
+        var inputImagen6 = fila.querySelector(".input_imagen6");
+        var inputImagen7 = fila.querySelector(".input_imagen7");
+        var inputImagen8 = fila.querySelector(".input_imagen8");
         // ... Agrega los demás campos específicos de las propiedades ...
 
         fila.addEventListener("click", function(event) {
@@ -87,6 +103,14 @@ document.addEventListener("DOMContentLoaded", function() {
                 labelJardin_area.classList.add("hidden");
                 labelPiscina.classList.add("hidden");
                 labelDescripcion.classList.add("hidden");
+                labelImagen1.classList.add("hidden");
+                labelImagen2.classList.add("hidden");
+                labelImagen3.classList.add("hidden");
+                labelImagen4.classList.add("hidden");
+                labelImagen5.classList.add("hidden");
+                labelImagen6.classList.add("hidden");
+                labelImagen7.classList.add("hidden");
+                labelImagen8.classList.add("hidden");
                 // ... Oculta y muestra las demás etiquetas y campos específicos de las propiedades ...
 
                 inputTitulo.classList.remove("hidden");
@@ -109,6 +133,14 @@ document.addEventListener("DOMContentLoaded", function() {
                 inputJardin_area.classList.remove("hidden");
                 inputPiscina.classList.remove("hidden");
                 inputDescripcion.classList.remove("hidden");
+                inputImagen1.classList.remove("hidden");
+                inputImagen2.classList.remove("hidden");
+                inputImagen3.classList.remove("hidden");
+                inputImagen4.classList.remove("hidden");
+                inputImagen5.classList.remove("hidden");
+                inputImagen6.classList.remove("hidden");
+                inputImagen7.classList.remove("hidden");
+                inputImagen8.classList.remove("hidden");
                 // ... Oculta y muestra los demás campos específicos de las propiedades ...
             } else if (botonClickeado.classList.contains("cancelarEditar")) {
                 // Ocultar guardar y cancelar, mostrar editar
@@ -138,6 +170,14 @@ document.addEventListener("DOMContentLoaded", function() {
                 labelJardin_area.classList.remove("hidden");
                 labelPiscina.classList.remove("hidden");
                 labelDescripcion.classList.remove("hidden");
+                labelImagen1.classList.remove("hidden");
+                labelImagen2.classList.remove("hidden");
+                labelImagen3.classList.remove("hidden");
+                labelImagen4.classList.remove("hidden");
+                labelImagen5.classList.remove("hidden");
+                labelImagen6.classList.remove("hidden");
+                labelImagen7.classList.remove("hidden");
+                labelImagen8.classList.remove("hidden");
                 // ... Muestra y oculta las demás etiquetas y campos específicos de las propiedades ...
 
                 inputTitulo.classList.add("hidden");
@@ -160,6 +200,14 @@ document.addEventListener("DOMContentLoaded", function() {
                 inputJardin_area.classList.add("hidden");
                 inputPiscina.classList.add("hidden");
                 inputDescripcion.classList.add("hidden");
+                inputImagen1.classList.add("hidden");
+                inputImagen2.classList.add("hidden");
+                inputImagen3.classList.add("hidden");
+                inputImagen4.classList.add("hidden");
+                inputImagen5.classList.add("hidden");
+                inputImagen6.classList.add("hidden");
+                inputImagen7.classList.add("hidden");
+                inputImagen8.classList.add("hidden");
                 // ... Oculta y muestra los demás campos específicos de las propiedades ...
             } else if (botonClickeado.classList.contains("guardar")) {
                 // Aquí puedes realizar operaciones de actualización en la base de datos utilizando AJAX o un formulario
@@ -192,6 +240,14 @@ document.addEventListener("DOMContentLoaded", function() {
                 labelJardin_area.classList.remove("hidden");
                 labelPiscina.classList.remove("hidden");
                 labelDescripcion.classList.remove("hidden");
+                labelImagen1.classList.remove("hidden");
+                labelImagen2.classList.remove("hidden");
+                labelImagen3.classList.remove("hidden");
+                labelImagen4.classList.remove("hidden");
+                labelImagen5.classList.remove("hidden");
+                labelImagen6.classList.remove("hidden");
+                labelImagen7.classList.remove("hidden");
+                labelImagen8.classList.remove("hidden");
                 // ... Muestra y oculta las demás etiquetas y campos específicos de las propiedades ...
 
                 inputTitulo.classList.add("hidden");
@@ -214,6 +270,14 @@ document.addEventListener("DOMContentLoaded", function() {
                 inputJardin_area.classList.add("hidden");
                 inputPiscina.classList.add("hidden");
                 inputDescripcion.classList.add("hidden");
+                inputImagen1.classList.add("hidden");
+                inputImagen2.classList.add("hidden");
+                inputImagen3.classList.add("hidden");
+                inputImagen4.classList.add("hidden");
+                inputImagen5.classList.add("hidden");
+                inputImagen6.classList.add("hidden");
+                inputImagen7.classList.add("hidden");
+                inputImagen8.classList.add("hidden");
                 // ... Oculta y muestra los demás campos específicos de las propiedades ...
             } else if (botonClickeado.classList.contains("eliminar")) {
                 // Ocultar eliminar y mostrar confirmar y cancelar
